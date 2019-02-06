@@ -1,0 +1,22 @@
+#splash {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://hddesktopwallpaper.org/wp-content/uploads/2017/01/surfing-desktop-wallpaper9.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+#splash h1 {
+  padding-top: 45vh;
+  font-size: 5rem;
+}

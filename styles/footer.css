@@ -1,0 +1,7 @@
+footer {
+  position: relative;
+  display: flex;
+  height: 2rem;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+}
