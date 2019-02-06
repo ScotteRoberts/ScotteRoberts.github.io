@@ -1,0 +1,40 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 6rem;
+}
+
+#projects ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#projects ul li {
+  padding: 1rem;
+}
+
+#projects ul li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background-color 500ms;
+}
+
+#projects ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#projects ul li a figcaption {
+  color: #8f8f8f;
+  text-transform: uppercase;
+}
+
+#projects ul li a img {
+  width: 15rem;
+}

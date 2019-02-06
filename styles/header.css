@@ -2,7 +2,7 @@ header {
   position: fixed;
   display: flex;
   width: calc(100% - 1rem);
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 
   z-index: 999;
   background: none;
@@ -10,17 +10,17 @@ header {
   border-bottom: 1px solid gainsboro;
 }
 
-nav {
+header nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  flex-flow: wrap;
 }
 
 #logo {
   display: flex;
-  width: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-left: 1rem;
   color: #8f8f8f;
   text-transform: uppercase;
@@ -33,25 +33,27 @@ nav {
   color: #000;
 }
 
-nav ul {
+header nav ul {
   display: flex;
+  padding-left: 1rem;
+  flex-flow: wrap;
   list-style: none;
   overflow: hidden;
 }
 
-nav ul li {
-  padding: 0 0.5rem;
+header nav ul li {
+  padding: 0rem 0.75rem 0rem 0rem;
 }
 
-nav ul a {
+header nav ul a {
   color: #888888;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-decoration: none;
 
   transition: color 500ms;
 }
 
-nav ul a:hover {
+header nav ul a:hover {
   color: #000;
 }
