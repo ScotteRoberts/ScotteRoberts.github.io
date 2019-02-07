@@ -5,7 +5,6 @@ header {
   padding: 0 0.5rem;
 
   z-index: 999;
-  background: none;
   background-color: rgba(255, 255, 255, 0.93);
   border-bottom: 1px solid gainsboro;
 }

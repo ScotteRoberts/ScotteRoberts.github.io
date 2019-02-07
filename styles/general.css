@@ -1,23 +1,68 @@
 :root {
   font-size: 20px;
   font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+html {
+  /* Ask Andrew if this is scroll-jacking */
+  scroll-behavior: smooth;
+  background-color: whitesmoke;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: #222;
+}
+
+article {
+  max-width: 40em;
+  margin: auto;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+article > h2 {
+  text-align: center;
+}
+
+article h3 {
   margin: 1rem 0;
 }
 
+.summary {
+  margin: 1rem 0 0 0;
+}
+
+section {
+  padding: 3rem 6rem;
+  border: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section > h2 {
+  text-align: center;
+}
+
 p {
-  margin-bottom: 1rem;
   line-height: 1.8rem;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+.tab {
+  padding-left: 1.5rem;
 }

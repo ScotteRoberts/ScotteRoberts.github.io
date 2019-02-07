@@ -1,22 +1,7 @@
 footer {
+  border: 1rem;
   padding: 1rem;
-}
+  background-color: palegoldenrod;
 
-footer nav {
-  display: flex;
-  align-content: flex-stretch;
-}
-
-.icon {
-  display: flex;
-  align-content: center;
-  padding-left: 0.5rem;
-
-  font-size: 2.5rem;
-  text-decoration: none;
-  color: black;
-}
-
-.fa-linkedin {
-  color: blue;
+  display: none;
 }

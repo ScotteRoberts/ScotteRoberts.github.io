@@ -1,0 +1,43 @@
+#contact {
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+#contact img {
+  width: 15rem;
+  align-self: center;
+  border-radius: 25%;
+}
+
+#contact div {
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact div div {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  display: flex;
+  align-content: center;
+  padding: 0.5rem;
+  border-radius: 5%;
+
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+
+  transition: background-color 500ms;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
