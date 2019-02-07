@@ -2,7 +2,7 @@ header {
   position: fixed;
   display: flex;
   width: calc(100% - 1rem);
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.93);
@@ -18,7 +18,7 @@ header nav {
 }
 
 #logo {
-  display: flex;
+  flex-grow: 1;
   font-size: 1.25rem;
   padding-left: 1rem;
   color: #8f8f8f;
@@ -28,26 +28,34 @@ header nav {
   transition: color 500ms;
 }
 
+@media (max-width: 700px) {
+  #logo {
+    flex: 1 0 100%;
+  }
+}
+
 #logo:hover {
   color: #000;
 }
 
 header nav ul {
-  display: flex;
-  padding-left: 1rem;
-  flex-flow: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header nav ul li {
-  padding: 0rem 0.75rem 0rem 0rem;
+  padding: 0.5rem;
 }
 
 header nav ul a {
   color: #888888;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-decoration: none;
 
   transition: color 500ms;

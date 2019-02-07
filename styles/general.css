@@ -10,13 +10,26 @@ html {
   background-color: whitesmoke;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   margin: 1rem 0;
   line-height: 1.25;
 
   color: #222;
+}
+
+h2 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: #222;
+  text-align: center;
+}
+
+h3 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: gold;
 }
 
 article {
@@ -42,8 +55,9 @@ article h3 {
 }
 
 section {
-  padding: 3rem 6rem;
-  border: 6rem;
+  max-width: 70em;
+  margin: auto;
+  padding: 3rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -57,6 +71,15 @@ section > h2 {
 p {
   line-height: 1.8rem;
   font-family: "Open Sans", sans-serif;
+}
+
+span {
+  line-height: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {

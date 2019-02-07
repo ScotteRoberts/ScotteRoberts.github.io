@@ -1,8 +1,10 @@
 #splash {
-  position: relative;
+  /* position: relative; */
+  max-width: 100%;
+  padding: 1rem;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(https://hddesktopwallpaper.org/wp-content/uploads/2017/01/surfing-desktop-wallpaper9.jpg);
+    url("../img/surfing-desktop-wallpaper.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

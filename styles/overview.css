@@ -1,0 +1,13 @@
+#overview ul li {
+  padding: 0.5rem 0;
+}
+
+.summary {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+.summary p {
+  margin: 0;
+}
