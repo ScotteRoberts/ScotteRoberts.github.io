@@ -9,6 +9,13 @@ header {
   border-bottom: 1px solid gainsboro;
 }
 
+@media only screen and (max-width: 44rem) 
+{
+  header {
+    display: none;
+  }
+}
+
 header nav {
   display: flex;
   width: 100%;
@@ -50,17 +57,4 @@ header nav ul {
 
 header nav ul li {
   padding: 0.5rem;
-}
-
-header nav ul a {
-  color: #888888;
-  text-transform: uppercase;
-  font-size: 1rem;
-  text-decoration: none;
-
-  transition: color 500ms;
-}
-
-header nav ul a:hover {
-  color: #000;
 }
