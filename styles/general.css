@@ -6,7 +6,7 @@
 
 html {
   /* Ask Andrew if this is scroll-jacking */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   background-color: whitesmoke;
 }
 
