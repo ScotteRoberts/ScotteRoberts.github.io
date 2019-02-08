@@ -9,13 +9,6 @@ header {
   border-bottom: 1px solid gainsboro;
 }
 
-@media only screen and (max-width: 44rem) 
-{
-  header {
-    display: none;
-  }
-}
-
 header nav {
   display: flex;
   width: 100%;
@@ -24,37 +17,28 @@ header nav {
   flex-flow: wrap;
 }
 
-#logo {
-  flex-grow: 1;
-  font-size: 1.25rem;
-  padding-left: 1rem;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  transition: color 500ms;
-}
-
-@media (max-width: 700px) {
-  #logo {
-    flex: 1 0 100%;
-  }
-}
-
-#logo:hover {
-  color: #000;
-}
-
 header nav ul {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 header nav ul li {
   padding: 0.5rem;
+}
+
+@media only screen and (max-width: 44rem) 
+{
+  #logo {
+    display: none;
+  }
+  header nav ul li a{
+    font-size: 0.75rem;
+  }
 }
