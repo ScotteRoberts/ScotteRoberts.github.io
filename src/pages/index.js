@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 class Home extends React.Component {
   render() {
     return (
       <body>
+        <Helmet>
+          <meta charset="utf-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Home | Portfolio</title>
+        </Helmet>
         <header>
           <nav>
             <ul id="nav-list">
