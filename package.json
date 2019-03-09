@@ -1,0 +1,28 @@
+{
+  "name": "scotteroberts.github.io",
+  "version": "1.1.0",
+  "author": "Scott Roberts",
+  "description": "Professional Portfolio",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "gatsby": "^2.1.27",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScotteRoberts/ScotteRoberts.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ScotteRoberts/ScotteRoberts.github.io/issues"
+  },
+  "homepage": "https://github.com/ScotteRoberts/ScotteRoberts.github.io#readme"
+}
