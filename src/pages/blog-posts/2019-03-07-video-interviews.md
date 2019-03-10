@@ -1,6 +1,7 @@
-# Video Interviews
-
-## tl;dr
+---
+title: 'Video Interviews'
+date: '2019-03-07'
+---
 
 Employees had to do video interviews in the company to highlight your soft skills and previous experiences.
 

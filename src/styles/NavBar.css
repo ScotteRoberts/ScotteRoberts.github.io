@@ -2,7 +2,7 @@ header {
   position: fixed;
   display: flex;
   width: calc(100% - 1rem);
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
 
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.93);
@@ -33,12 +33,11 @@ header nav ul li {
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 44rem) 
-{
+@media only screen and (max-width: 44rem) {
   #logo {
     display: none;
   }
-  header nav ul li a{
-    font-size: 0.75rem;
+  header nav ul li a {
+    font-size: 0.8rem;
   }
 }

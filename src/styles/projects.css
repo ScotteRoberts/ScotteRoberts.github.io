@@ -1,21 +1,16 @@
 #projects ul {
-  padding: 2rem;
   display: grid;
+  padding: 0rem;
   grid-template-columns: repeat(2, 1fr);
-  box-align: center;
   grid-auto-flow: row;
   grid-gap: 2rem;
 
   list-style: none;
 }
 
-@media all and (max-width: 50rem)
-{
+@media all and (max-width: 50rem) {
   #projects ul {
     grid-template-columns: 1fr;
+    padding: 2rem;
   }
-}
-
-#projects ul li {
-  text-align: center;
 }

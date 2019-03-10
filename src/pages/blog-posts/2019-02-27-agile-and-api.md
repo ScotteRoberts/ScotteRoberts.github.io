@@ -1,6 +1,7 @@
-# Agile and API
-
-## tl;dr
+---
+title: 'Agile and API'
+date: '2019-02-27'
+---
 
 At Talent Path we are jumping into Node and Express development on servers. For technology, I have been interested in making Server APIs.
 

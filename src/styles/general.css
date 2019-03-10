@@ -1,11 +1,10 @@
 :root {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #333;
 }
 
-@media only screen and (max-width: 44rem) 
-{
+@media only screen and (max-width: 44rem) {
   :root {
     font-size: 18px;
   }
@@ -17,34 +16,8 @@ html {
   background-color: whitesmoke;
 }
 
-h1 {
-  margin: 1rem 0;
-  line-height: 1.25;
-
-  color: #222;
-}
-
-h2 {
-  margin: 1rem 0;
-  line-height: 1.25;
-
-  color: #222;
-  text-align: center;
-}
-
-h3 {
-  margin: 1rem 0;
-  line-height: 1.25;
-
-  color: gold;
-}
-
-h4 {
-  margin: 1rem 0;
-}
-
-article {
-  max-width: 40em;
+section {
+  max-width: 40rem;
   margin: auto;
   padding: 3rem 2rem;
 
@@ -53,8 +26,14 @@ article {
   align-content: center;
 }
 
-article > h2 {
-  text-align: center;
+article {
+  max-width: 30rem;
+  margin: auto;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 article h3 {
@@ -65,23 +44,9 @@ article h3 {
   margin: 1rem 0 0 0;
 }
 
-section {
-  max-width: 60em;
-  margin: auto;
-  padding: 3rem 2rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-section > h2 {
-  text-align: center;
-}
-
 p {
   line-height: 1.8rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 span {
