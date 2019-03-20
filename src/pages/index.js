@@ -1,48 +1,32 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import LazyLoad from 'react-lazy-load';
+import NavBar from '../components/NavBar';
 
 class Home extends React.Component {
   render() {
     return (
-      <body>
+      <main>
         <Helmet>
           <meta charset="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Home | Portfolio</title>
         </Helmet>
-        <header>
-          <nav>
-            <ul id="nav-list">
-              <li>
-                <Link id="logo" to="#splash">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="#overview">About</Link>
-              </li>
-              <li>
-                <Link to="#projects">Projects</Link>
-              </li>
-              <li>
-                <Link to="#contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="/blog/">Blog</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <NavBar />
         <section id="splash">
           <h1>Scott Roberts</h1>
           <p>"Gee, Brain, what do you want to do tonight?"</p>
           <p>"The same thing we do every night, Pinky - try to take over the world!"</p>
         </section>
+
         <article id="overview">
           <h2>Overview</h2>
-          <h3>Work</h3>
+
+          <h3>
+            <i className="fas fa-code-branch" />
+            <span className="tab">Work</span>
+          </h3>
           <span className="summary">
             <em>[tl;dr]</em>
             <p className="tab">
@@ -52,13 +36,13 @@ class Home extends React.Component {
           </span>
           <p>
             My background supports my ability to contribute. Currently, I am completing a Software
-            Engineering training course, offered by
-            <stong>Talent Path</stong> (division of Genuent). Each trainee must apply proven
-            leadership qualities, demonstrate their ability to collaborate, and finish required
-            tasks with excellence. In addition to my technical training, I worked seven full-time
-            summers for the <strong>California Junior Lifeguard Programs (CAJG)</strong>, dedication
-            to the program, as a Lifeguard Instructor and for two of those summers as the Managing
-            Director. Skills I will apply in your company are:
+            Engineering training course, offered by <strong>Talent Path</strong> (division of
+            Genuent). Each trainee must apply proven leadership qualities, demonstrate their ability
+            to collaborate, and finish required tasks with excellence. In addition to my technical
+            training, I worked seven full-time summers for the{' '}
+            <strong>California Junior Lifeguard Programs (CAJG)</strong>, dedication to the program,
+            as a Lifeguard Instructor and for two of those summers as the Managing Director. Skills
+            I will apply in your company are:
           </p>
           <ul>
             <li>Team communication</li>
@@ -66,7 +50,10 @@ class Home extends React.Component {
             <li>Public speaking</li>
             <li>Quick learning</li>
           </ul>
-          <h3>Personal</h3>
+          <h3>
+            <i className="far fa-smile-beam" />
+            <span className="tab">Personal</span>
+          </h3>
           <span className="summary">
             <em>[tl;dr]</em>
             <p className="tab">I love to surf, play video / board games, and bang on the drums.</p>
@@ -86,7 +73,10 @@ class Home extends React.Component {
             My personal hobby is tapping (drums, bongos, cajons, cowbells) and if I can get my hands
             on it, it's going to make some noise.
           </p>
-          <h3>Health</h3>
+          <h3>
+            <i className="fas fa-heartbeat" />
+            <span className="tab">Health</span>
+          </h3>
           <span className="summary">
             <em>[tl;dr]</em>
             <p className="tab">
@@ -113,38 +103,36 @@ class Home extends React.Component {
           <h2>Projects</h2>
           <ul>
             <li>
-              <img
-                id="momentum-image"
-                src="img\momentum_clone_screenshot.png"
-                alt="Momentum Clone Screenshot"
-              />
+              <LazyLoad offsetVertical={1000}>
+                <img
+                  id="momentum-image"
+                  src="img\momentum_clone_screenshot.png"
+                  alt="Momentum Clone Screenshot"
+                />
+              </LazyLoad>
               <h3>Momentum Clone | Google Chrome Extension</h3>
               <h4>Simple overlay over Google Homepage to offer a personalized experience.</h4>
               <a href="https://github.com/ScotteRoberts/Momentum-Clone">View Docs</a>
-              <div id="momentum-description" />
             </li>
             <li>
-              <img src="img\ecs_screenshot.png" alt="ECS Screenshot" />
-              <div>
-                <h3>Extracurricular Schooling | Web Application</h3>
-                <h4>Article aggregator with reading gamefication.</h4>
-                <a href="https://github.com/extra-curricular-schooling/ecs-development">
-                  View Docs
-                </a>
-              </div>
+              <LazyLoad offsetVertical={1000}>
+                <img src="img\ecs_screenshot.png" alt="ECS Screenshot" />
+              </LazyLoad>
+              <h3>Extracurricular Schooling | Web Application</h3>
+              <h4>Article aggregator with reading gamefication.</h4>
+              <a href="https://github.com/extra-curricular-schooling/ecs-development">View Docs</a>
             </li>
             <li>
-              <img
-                id="connect-four"
-                src="img/connect_four_screenshot.PNG"
-                alt="Connect Four Screenshot"
-              />
-
-              <div>
-                <h3>Connect Four | Web Application</h3>
-                <h4>HTML, CSS, and Javascript implementation of classic Connect Four.</h4>
-                <a href="https://github.com/ScotteRoberts/connect-four">View Docs</a>
-              </div>
+              <LazyLoad offsetVertical={1000}>
+                <img
+                  id="connect-four"
+                  src="img/connect_four_screenshot.PNG"
+                  alt="Connect Four Screenshot"
+                />
+              </LazyLoad>
+              <h3>Connect Four | Web Application</h3>
+              <h4>HTML, CSS, and Javascript implementation of classic Connect Four.</h4>
+              <a href="https://github.com/ScotteRoberts/connect-four">View Docs</a>
             </li>
           </ul>
         </section>
@@ -193,7 +181,7 @@ class Home extends React.Component {
             <span>Copyright 2019 - Scott Roberts</span>
           </nav>
         </footer>
-      </body>
+      </main>
     );
   }
 }

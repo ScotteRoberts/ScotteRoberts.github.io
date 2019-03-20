@@ -1,0 +1,18 @@
+h1,
+h2 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: #222;
+}
+
+h3 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: #ffc60a;
+}
+
+h4 {
+  margin: 1rem 0;
+}
