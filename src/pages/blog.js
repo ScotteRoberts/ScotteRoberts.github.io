@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import BlogLayout from '../components/BlogLayout';
 import '../styles/blog.css';
 
@@ -18,10 +18,12 @@ class Blog extends React.Component {
 
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <article key={node.id} className="blog-post-item-container">
-            <h3>
-              {node.frontmatter.title} at {node.frontmatter.date}
-            </h3>
-            <p>{node.excerpt}</p>
+            <Link to={node.fields.slug} className="blog-post-item-link">
+              <h3>
+                {node.frontmatter.title} at {node.frontmatter.date}
+              </h3>
+              <p>{node.excerpt}</p>
+            </Link>
           </article>
         ))}
       </BlogLayout>
@@ -41,6 +43,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt(pruneLength: 100)
         }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import LazyLoad from 'react-lazy-load';
 import NavBar from '../components/NavBar';
 
 class Home extends React.Component {
@@ -21,7 +22,11 @@ class Home extends React.Component {
 
         <article id="overview">
           <h2>Overview</h2>
-          <h3>Work</h3>
+
+          <h3>
+            <i className="fas fa-code-branch" />
+            <span className="tab">Work</span>
+          </h3>
           <span className="summary">
             <em>[tl;dr]</em>
             <p className="tab">
@@ -45,7 +50,10 @@ class Home extends React.Component {
             <li>Public speaking</li>
             <li>Quick learning</li>
           </ul>
-          <h3>Personal</h3>
+          <h3>
+            <i className="far fa-smile-beam" />
+            <span className="tab">Personal</span>
+          </h3>
           <span className="summary">
             <em>[tl;dr]</em>
             <p className="tab">I love to surf, play video / board games, and bang on the drums.</p>
@@ -65,7 +73,10 @@ class Home extends React.Component {
             My personal hobby is tapping (drums, bongos, cajons, cowbells) and if I can get my hands
             on it, it's going to make some noise.
           </p>
-          <h3>Health</h3>
+          <h3>
+            <i className="fas fa-heartbeat" />
+            <span className="tab">Health</span>
+          </h3>
           <span className="summary">
             <em>[tl;dr]</em>
             <p className="tab">
@@ -92,27 +103,33 @@ class Home extends React.Component {
           <h2>Projects</h2>
           <ul>
             <li>
-              <img
-                id="momentum-image"
-                src="img\momentum_clone_screenshot.png"
-                alt="Momentum Clone Screenshot"
-              />
+              <LazyLoad offsetVertical={1000}>
+                <img
+                  id="momentum-image"
+                  src="img\momentum_clone_screenshot.png"
+                  alt="Momentum Clone Screenshot"
+                />
+              </LazyLoad>
               <h3>Momentum Clone | Google Chrome Extension</h3>
               <h4>Simple overlay over Google Homepage to offer a personalized experience.</h4>
               <a href="https://github.com/ScotteRoberts/Momentum-Clone">View Docs</a>
             </li>
             <li>
-              <img src="img\ecs_screenshot.png" alt="ECS Screenshot" />
+              <LazyLoad offsetVertical={1000}>
+                <img src="img\ecs_screenshot.png" alt="ECS Screenshot" />
+              </LazyLoad>
               <h3>Extracurricular Schooling | Web Application</h3>
               <h4>Article aggregator with reading gamefication.</h4>
               <a href="https://github.com/extra-curricular-schooling/ecs-development">View Docs</a>
             </li>
             <li>
-              <img
-                id="connect-four"
-                src="img/connect_four_screenshot.PNG"
-                alt="Connect Four Screenshot"
-              />
+              <LazyLoad offsetVertical={1000}>
+                <img
+                  id="connect-four"
+                  src="img/connect_four_screenshot.PNG"
+                  alt="Connect Four Screenshot"
+                />
+              </LazyLoad>
               <h3>Connect Four | Web Application</h3>
               <h4>HTML, CSS, and Javascript implementation of classic Connect Four.</h4>
               <a href="https://github.com/ScotteRoberts/connect-four">View Docs</a>

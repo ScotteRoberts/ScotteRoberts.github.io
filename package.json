@@ -22,7 +22,8 @@
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-lazy-load": "^3.0.13"
   },
   "repository": {
     "type": "git",
