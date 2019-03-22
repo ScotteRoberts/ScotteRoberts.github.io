@@ -1,7 +1,6 @@
 #projects ul {
   display: grid;
   padding: 0rem;
-  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
   grid-gap: 2rem;
 
@@ -10,7 +9,6 @@
 
 @media all and (max-width: 50rem) {
   #projects ul {
-    grid-template-columns: 1fr;
     padding: 2rem;
   }
 }

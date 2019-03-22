@@ -56,15 +56,27 @@ img {
 
 a {
   color: #888888;
-  text-transform: uppercase;
   font-size: 1rem;
   text-decoration: none;
-
   transition: color 500ms;
 }
 
 a:hover {
   color: #000;
+}
+
+pre {
+  border-radius: 8px;
+  background-color: #333;
+  padding: 0.5rem 1.5rem;
+}
+code {
+  color: azure;
+}
+
+blockquote {
+  padding: 0rem 1.5rem;
+  border-left: 3px solid black;
 }
 
 .tab {
