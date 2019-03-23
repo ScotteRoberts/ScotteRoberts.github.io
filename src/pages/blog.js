@@ -20,7 +20,8 @@ class Blog extends React.Component {
           <article key={node.id} className="blog-post-item-container">
             <Link to={node.fields.slug} className="blog-post-item-link">
               <h3>
-                {node.frontmatter.title} at {node.frontmatter.date}
+                {node.frontmatter.title}
+                <span style={{ float: 'right' }}>{node.frontmatter.date}</span>
               </h3>
               <p>{node.excerpt}</p>
             </Link>

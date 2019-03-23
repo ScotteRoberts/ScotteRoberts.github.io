@@ -1,7 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import LazyLoad from 'react-lazy-load';
-import { Link } from 'gatsby';
 import NavBar from '../components/NavBar';
 
 class Home extends React.Component {
@@ -104,36 +102,40 @@ class Home extends React.Component {
           <h2>Projects</h2>
           <ul>
             <li>
+              <a href="https://github.com/project-aura">
+                <img src="img\aura_screenshot.png" alt="Aura Screenshot" />
+                <h3>Project Aura | Web Application</h3>
+                <h4>Business finder that matches your personality.</h4>
+              </a>
+            </li>
+            <li>
               <a href="https://github.com/ScotteRoberts/Momentum-Clone">
-                <LazyLoad offsetVertical={1000}>
-                  <img
-                    id="momentum-image"
-                    src="img\momentum_clone_screenshot.png"
-                    alt="Momentum Clone Screenshot"
-                  />
-                </LazyLoad>
+                <img
+                  id="momentum-image"
+                  src="img\momentum_clone_screenshot.png"
+                  alt="Momentum Clone Screenshot"
+                />
+
                 <h3>Momentum Clone | Google Chrome Extension</h3>
                 <h4>Simple overlay over Google Homepage to offer a personalized experience.</h4>
               </a>
             </li>
             <li>
               <a href="https://github.com/extra-curricular-schooling/ecs-development">
-                <LazyLoad offsetVertical={1000}>
-                  <img src="img\ecs_screenshot.png" alt="ECS Screenshot" />
-                </LazyLoad>
+                <img src="img\ecs_screenshot.png" alt="ECS Screenshot" />
+
                 <h3>Extracurricular Schooling | Web Application</h3>
                 <h4>Article aggregator with reading gamefication.</h4>
               </a>
             </li>
             <li>
               <a href="https://github.com/ScotteRoberts/connect-four">
-                <LazyLoad offsetVertical={1000}>
-                  <img
-                    id="connect-four"
-                    src="img/connect_four_screenshot.PNG"
-                    alt="Connect Four Screenshot"
-                  />
-                </LazyLoad>
+                <img
+                  id="connect-four"
+                  src="img/connect_four_screenshot.PNG"
+                  alt="Connect Four Screenshot"
+                />
+
                 <h3>Connect Four | Web Application</h3>
                 <h4>HTML, CSS, and Javascript implementation of classic Connect Four.</h4>
               </a>
