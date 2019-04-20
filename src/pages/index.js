@@ -143,7 +143,7 @@ class Home extends React.Component {
           </ul>
         </section>
         <section id="contact">
-          <img src="./img/scott_roberts_professional.jpg" alt="A handsome man" />
+          <img src="./img/scott_roberts_icon_developer.png" alt="A handsome man" />
           <div>
             <h2>Contact Information</h2>
             <div>
@@ -184,7 +184,11 @@ class Home extends React.Component {
         </section>
         <footer>
           <nav>
-            <span>Copyright 2019 - Scott Roberts</span>
+            © 2019 - Scott Roberts
+            <span>
+              Icon made by <a href="https://www.freepik.com">Freepik</a> from{' '}
+              <a href="https://www.flaticon.com">Flaticon</a>
+            </span>
           </nav>
         </footer>
       </main>

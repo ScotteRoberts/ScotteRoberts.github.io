@@ -21,7 +21,7 @@ class Blog extends React.Component {
             <Link to={node.fields.slug} className="blog-post-item-link">
               <h3>
                 {node.frontmatter.title}
-                <span style={{ float: 'right' }}>{node.frontmatter.date}</span>
+                <span className="blog-post-item-date">{node.frontmatter.date}</span>
               </h3>
               <p>{node.excerpt}</p>
             </Link>

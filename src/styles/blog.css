@@ -1,8 +1,17 @@
 .blog-post-item-container {
   padding: 1.5rem;
   height: 8rem;
-  width: 100%;
   margin-top: 2rem;
   border: 2px solid black;
   box-shadow: 2px 2px grey;
+}
+
+.blog-post-item-date {
+  float: right;
+}
+
+@media only screen and (max-width: 44rem) {
+  .blog-post-item-date {
+    display: none;
+  }
 }
