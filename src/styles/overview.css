@@ -1,8 +1,5 @@
-#overview ul li {
-  padding: 0.5rem 0;
-}
-
 .summary {
+  margin: 1rem 0;
   display: flex;
   flex-flow: row;
   align-items: flex-start;
@@ -10,4 +7,26 @@
 
 .summary p {
   margin: 0;
+  padding-bottom: 1rem;
+}
+
+.icon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  justify-items: center;
+  grid-gap: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.icon-list li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icon-list li i {
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--gold);
 }

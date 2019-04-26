@@ -3,7 +3,7 @@ const projectData = [
     title: 'Aura',
     type: 'Web Application',
     description: 'Business finder that matches your personality.',
-    url: 'https://github.com/project-aura',
+    url: 'https://aura.community',
     img: {
       src: 'img/aura_screenshot.png',
     },

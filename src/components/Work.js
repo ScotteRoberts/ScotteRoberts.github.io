@@ -9,24 +9,45 @@ const Work = () => (
     <span className="summary">
       <em>[tl;dr]</em>
       <p className="tab">
-        I am a practicing <strong>full-stack web developer</strong> with a technical background and
+        I am a practicing <strong>Full-Stack Engineer</strong> with a technical background and
         experience in managerial positions.
       </p>
     </span>
     <p>
-      My background supports my ability to contribute. Currently, I am completing a Software
-      Engineering training course, offered by <strong>Talent Path</strong> (division of Genuent).
-      Each trainee must apply proven leadership qualities, demonstrate their ability to collaborate,
-      and finish required tasks with excellence. In addition to my technical training, I worked
-      seven full-time summers for the <strong>California Junior Lifeguard Programs (CAJG)</strong>,
-      dedication to the program, as a Lifeguard Instructor and for two of those summers as the
-      Managing Director. Skills I will apply in your company are:
+      Currently, I am a Full-Stack Engineer employed at {` `}
+      <strong>Talent Path</strong> (division of Genuent). Each engineer must apply proven leadership
+      qualities, demonstrate their ability to collaborate, and finish required tasks with excellence
+      (
+      <a href="https://www.youracclaim.com/badges/b9bcfbd9-be9f-4ba0-af44-668bdb1cca65/public_url">
+        Click to view my certificate
+      </a>
+      ). In addition to my technical training, I worked seven full-time summers for the California
+      Junior Lifeguard Programs (CAJG) as a Lifeguard Instructor and for two of those summers as the
+      Managing Director.
     </p>
-    <ul>
-      <li>Team communication</li>
-      <li>Time management</li>
-      <li>Public speaking</li>
-      <li>Quick learning</li>
+    <p>Skills I will apply in your company are:</p>
+    <ul className="icon-list">
+      <li>
+        <i className="fas fa-comments" /> Team Communication
+      </li>
+      <li>
+        <i className="fas fa-hourglass-half" /> Time Management
+      </li>
+      <li>
+        <i className="fas fa-lightbulb" /> Problem Solving
+      </li>
+      <li>
+        <i className="fas fa-clipboard-list" />
+        Strategic Planning
+      </li>
+      <li>
+        <i className="fas fa-chalkboard-teacher" />
+        Public Speaking
+      </li>
+      <li>
+        <i className="fas fa-graduation-cap" />
+        Quick Learning
+      </li>
     </ul>
   </React.Fragment>
 );

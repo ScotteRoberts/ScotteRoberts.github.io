@@ -25,7 +25,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "react-lazy-load": "^3.0.13"
+    "react-lazy-load": "^3.0.13",
+    "react-tabs": "^3.0.0"
   },
   "repository": {
     "type": "git",

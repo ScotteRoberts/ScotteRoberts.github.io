@@ -6,9 +6,3 @@
 
   list-style: none;
 }
-
-@media all and (max-width: 50rem) {
-  #projects ul {
-    padding: 2rem;
-  }
-}

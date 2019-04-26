@@ -10,7 +10,7 @@ h3 {
   margin: 1rem 0;
   line-height: 1.25;
 
-  color: #ffc60a;
+  color: var(--gold);
 }
 
 h4 {

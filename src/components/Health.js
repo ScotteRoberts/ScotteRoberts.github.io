@@ -18,10 +18,19 @@ const Health = () => (
       WellSteps, a blog dedicated providing education on employee wellness solutions, a healthy
       employee has:
     </p>
-    <ul>
-      <li>improved behavior</li>
-      <li>improved productivity</li>
-      <li>less cost in medical coverage</li>
+    <ul className="icon-list">
+      <li>
+        <i className="fas fa-user-check" style={{ color: 'green' }} />
+        Improved Behavior
+      </li>
+      <li>
+        <i className="fas fa-business-time" style={{ color: 'green' }} />
+        Improved Productivity
+      </li>
+      <li>
+        <i className="fas fa-user-md" style={{ color: 'red' }} />
+        Less Cost in Medical Coverage
+      </li>
     </ul>
     <p>
       I take personal pride in living a healthy, active lifestyle and practice healthy habbits
