@@ -5,7 +5,7 @@ const projectData = [
     description: 'Business finder that matches your personality.',
     url: 'https://aura.community',
     img: {
-      src: 'img/aura_screenshot.webp',
+      src: 'img/aura_screenshot.png',
     },
   },
   {
@@ -14,7 +14,7 @@ const projectData = [
     description: 'Take-home exam to display movie content from an API.',
     url: 'https://movie-viewer.netlify.com',
     img: {
-      src: 'img/movie_viewer_screenshot.webp',
+      src: 'img/movie_viewer_screenshot.png',
     },
   },
   {
@@ -23,7 +23,7 @@ const projectData = [
     description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
     url: 'https://custom-connect-four.netlify.com/',
     img: {
-      src: 'img/connect_four_screenshot.webp',
+      src: 'img/connect_four_screenshot.png',
     },
   },
   {
@@ -32,7 +32,7 @@ const projectData = [
     description: 'Simple overlay over Google Homepage to offer a personalized experience.',
     url: 'https://github.com/ScotteRoberts/Momentum-Clone',
     img: {
-      src: 'img/momentum_clone_screenshot.webp',
+      src: 'img/momentum_clone_screenshot.png',
     },
   },
   {
@@ -41,7 +41,7 @@ const projectData = [
     description: 'Article aggregator with reading gamefication.',
     url: 'https://github.com/extra-curricular-schooling/ecs-development',
     img: {
-      src: 'img/ecs_screenshot.webp',
+      src: 'img/ecs_screenshot.png',
     },
   },
 ];
