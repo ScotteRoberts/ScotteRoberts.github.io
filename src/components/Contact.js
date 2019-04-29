@@ -3,7 +3,7 @@ import '../styles/contacts.css';
 
 const Contact = props => (
   <section id="contact">
-    <img src="./img/scott_roberts_icon_developer.png" alt="A handsome man" />
+    <img src="./img/scott_roberts_icon_wedding.png" alt="A handsome man" />
     <div>
       <h2>Contact Information</h2>
       <div>

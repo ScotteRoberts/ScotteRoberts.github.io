@@ -7,8 +7,8 @@ const Projects = () => (
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      {projectData.map(project => (
-        <li>
+      {projectData.map((project, i) => (
+        <li key={i}>
           <Project projectData={project} />
         </li>
       ))}

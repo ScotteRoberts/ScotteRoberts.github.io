@@ -1,7 +1,7 @@
 const projectData = [
   {
     title: 'Aura',
-    type: 'Web Application',
+    type: 'Full-Stack Web Application',
     description: 'Business finder that matches your personality.',
     url: 'https://aura.community',
     img: {
@@ -19,7 +19,7 @@ const projectData = [
   },
   {
     title: 'Connect Four',
-    type: 'Web Application',
+    type: 'Front-End Web Application',
     description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
     url: 'https://custom-connect-four.netlify.com/',
     img: {
@@ -37,7 +37,7 @@ const projectData = [
   },
   {
     title: 'Extra Curricular Schooling',
-    type: 'Web Application',
+    type: 'Full-Stack Web Application',
     description: 'Article aggregator with reading gamefication.',
     url: 'https://github.com/extra-curricular-schooling/ecs-development',
     img: {

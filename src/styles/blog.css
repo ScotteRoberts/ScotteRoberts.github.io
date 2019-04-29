@@ -4,6 +4,7 @@
   margin-top: 2rem;
   border: 2px solid black;
   box-shadow: 2px 2px grey;
+  overflow: hidden;
 }
 
 .blog-post-item-date {
@@ -11,6 +12,9 @@
 }
 
 @media only screen and (max-width: 44rem) {
+  .blog-post-item-container {
+    padding: 0 1.5rem 2.5rem 1.5rem;
+  }
   .blog-post-item-date {
     display: none;
   }
