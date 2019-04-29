@@ -9,6 +9,24 @@ const projectData = [
     },
   },
   {
+    title: 'Movie Viewer',
+    type: 'Front-End Web Application',
+    description: 'Take-home exam to display movie content from an API.',
+    url: 'https://movie-viewer.netlify.com',
+    img: {
+      src: 'img/movie_viewer_screenshot.png',
+    },
+  },
+  {
+    title: 'Connect Four',
+    type: 'Web Application',
+    description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
+    url: 'https://custom-connect-four.netlify.com/',
+    img: {
+      src: 'img/connect_four_screenshot.PNG',
+    },
+  },
+  {
     title: 'Momentum Clone',
     type: 'Google Chrome Extension',
     description: 'Simple overlay over Google Homepage to offer a personalized experience.',
@@ -24,15 +42,6 @@ const projectData = [
     url: 'https://github.com/extra-curricular-schooling/ecs-development',
     img: {
       src: 'img/ecs_screenshot.png',
-    },
-  },
-  {
-    title: 'Connect Four',
-    type: 'Web Application',
-    description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
-    url: 'https://github.com/ScotteRoberts/connect-four',
-    img: {
-      src: 'img/connect_four_screenshot.PNG',
     },
   },
 ];
