@@ -2,11 +2,10 @@ header {
   position: fixed;
   display: flex;
   width: calc(100% - 1rem);
-  padding: 0.25rem 0.5rem;
-
+  padding: 0 0.5rem;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.93);
-  border-bottom: 1px solid gainsboro;
+
+  background-color: white;
 }
 
 header nav {
@@ -15,13 +14,19 @@ header nav {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
   flex-flow: wrap;
 }
 
+header nav a {
+  padding: 0.5rem;
+}
+
 header nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  height: 100%;
 
   display: flex;
   align-items: center;
@@ -30,13 +35,54 @@ header nav ul {
 }
 
 header nav ul li {
-  padding: 0.5rem;
+  padding: 0;
 }
+
+header nav ul li a {
+  display: block;
+  transition: color 1000ms, background-color 500ms;
+}
+
+header nav ul li a:hover,
+.dropdown:hover .dropdown-button {
+  color: var(--black);
+  background-color: var(--grey);
+}
+
+/* ========================= Drop down menu styling ============================== */
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Media Queries */
 
 @media only screen and (max-width: 44rem) {
   /* #logo {
     display: none;
   } */
+  header nav a,
   header nav ul li a {
     font-size: 0.8rem;
   }

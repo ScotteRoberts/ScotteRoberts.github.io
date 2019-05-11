@@ -5,6 +5,8 @@
   font-display: auto;
   color: #333;
   --gold: #ffc60a;
+  --grey: #888;
+  --black: #000;
 }
 
 @media only screen and (max-width: 44rem) {
@@ -53,14 +55,14 @@ img {
 }
 
 a {
-  color: #888888;
+  color: var(--grey);
   font-size: 1rem;
   text-decoration: none;
-  transition: color 500ms;
+  transition: color 1000ms;
 }
 
 a:hover {
-  color: #000;
+  color: var(--black);
 }
 
 pre {

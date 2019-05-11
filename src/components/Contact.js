@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/contacts.css';
 
-const Contact = props => (
+const Contact = () => (
   <section id="contact">
     <img src="./img/scott_roberts_icon_wedding.png" alt="A handsome man" />
     <div>
