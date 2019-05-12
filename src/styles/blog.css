@@ -1,6 +1,5 @@
 .blog-post-item-container {
-  padding: 1.5rem;
-  height: 8rem;
+  padding: 0;
   margin-top: 2rem;
   border: 2px solid black;
   box-shadow: 2px 2px grey;
@@ -11,10 +10,11 @@
   float: right;
 }
 
+.blog-post-item-link {
+  padding: 2rem;
+}
+
 @media only screen and (max-width: 44rem) {
-  .blog-post-item-container {
-    padding: 0 1.5rem 2.5rem 1.5rem;
-  }
   .blog-post-item-date {
     display: none;
   }

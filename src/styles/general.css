@@ -47,13 +47,13 @@ article h3 {
   margin: 1rem 0;
 }
 
-p {
-  font-family: 'Open Sans', sans-serif;
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -61,6 +61,10 @@ a {
   font-size: 1rem;
   text-decoration: none;
   transition: color 350ms, background-color 350ms;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 @media (hover: hover) {

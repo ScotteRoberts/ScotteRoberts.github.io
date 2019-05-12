@@ -10,7 +10,9 @@ const Project = ({ projectData }) => {
       </a>
       <h3>{`${title} | ${type}`}</h3>
       <h4>{`${description}`}</h4>
-      <a href={url}>{`${action}`} &#8811;</a>
+      <a href={url}>
+        {`${action}`} <i className="fas fa-chevron-right" />
+      </a>
     </div>
   );
 };
