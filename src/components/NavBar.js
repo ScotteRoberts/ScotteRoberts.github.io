@@ -8,10 +8,10 @@ const NavBar = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" activeClassName="active">
+            Home
+          </Link>
         </li>
-      </ul>
-      <ul>
         <li className="dropdown">
           <Link to="/#overview" className="dropdown-button">
             Sections &#9662;
@@ -22,8 +22,12 @@ const NavBar = () => (
             <Link to="/#contact">Contact</Link>
           </div>
         </li>
+      </ul>
+      <ul>
         <li>
-          <Link to="/blog/">Blog</Link>
+          <Link to="/blog/" activeClassName="active">
+            Blog
+          </Link>
         </li>
         <li>
           <a href={resume} target="_blank" rel="noopener noreferrer">

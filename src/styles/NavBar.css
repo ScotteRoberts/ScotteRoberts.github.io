@@ -45,7 +45,12 @@ header nav ul li a {
 
 header nav ul li a:hover,
 .dropdown:hover .dropdown-button {
-  color: var(--black);
+  color: var(--white);
+  background-color: var(--grey);
+}
+
+.active {
+  color: var(--white);
   background-color: var(--grey);
 }
 
