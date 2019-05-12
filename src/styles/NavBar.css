@@ -76,7 +76,7 @@ li.dropdown {
   display: block;
 }
 
-/* Media Queries */
+/* ============================ Media Queries ================================= */
 
 @media only screen and (max-width: 44rem) {
   /* #logo {

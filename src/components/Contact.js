@@ -1,9 +1,10 @@
 import React from 'react';
+import scottRobertsIcon from '../assets/img/scott_roberts_icon_wedding.png';
 import '../styles/contacts.css';
 
 const Contact = () => (
   <section id="contact">
-    <img src="./img/scott_roberts_icon_wedding.png" alt="A handsome man" />
+    <img src={scottRobertsIcon} alt="A handsome man" />
     <div>
       <h2>Contact Information</h2>
       <div>

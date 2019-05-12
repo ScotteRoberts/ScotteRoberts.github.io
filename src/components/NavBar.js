@@ -25,7 +25,7 @@ const NavBar = () => (
           <Link to="/blog/">Blog</Link>
         </li>
         <li>
-          <a href="docs/ScottRoberts_Resume_101118.pdf" download="Scott_Roberts_Resume">
+          <a href="docs/ScottRoberts_Resume_101118.pdf" target="_blank">
             Resume
           </a>
         </li>

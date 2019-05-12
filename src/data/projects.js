@@ -1,3 +1,9 @@
+import auraSceenshot from '../assets/img/aura_screenshot.jpg';
+import movieViewerScreenshot from '../assets/img/movie_viewer_screenshot.jpg';
+import connectFourScreenshot from '../assets/img/connect_four_screenshot.jpg';
+import momentumCloneScreenshot from '../assets/img/momentum_clone_screenshot.jpg';
+import ecsScreenshot from '../assets/img/ecs_screenshot.jpg';
+
 const projectData = [
   {
     title: 'Aura',
@@ -5,7 +11,7 @@ const projectData = [
     description: 'Business finder that matches your personality.',
     url: 'https://aura.community',
     img: {
-      src: 'img/aura_screenshot.jpg',
+      src: auraSceenshot,
     },
   },
   {
@@ -14,7 +20,7 @@ const projectData = [
     description: 'Take-home exam to display movie content from an API.',
     url: 'https://movie-viewer.netlify.com',
     img: {
-      src: 'img/movie_viewer_screenshot.jpg',
+      src: movieViewerScreenshot,
     },
   },
   {
@@ -23,7 +29,7 @@ const projectData = [
     description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
     url: 'https://custom-connect-four.netlify.com/',
     img: {
-      src: 'img/connect_four_screenshot.jpg',
+      src: connectFourScreenshot,
     },
   },
   {
@@ -32,7 +38,7 @@ const projectData = [
     description: 'Simple overlay over Google Homepage to offer a personalized experience.',
     url: 'https://github.com/ScotteRoberts/Momentum-Clone',
     img: {
-      src: 'img/momentum_clone_screenshot.jpg',
+      src: momentumCloneScreenshot,
     },
   },
   {
@@ -41,7 +47,7 @@ const projectData = [
     description: 'Article aggregator with reading gamefication.',
     url: 'https://github.com/extra-curricular-schooling/ecs-development',
     img: {
-      src: 'img/ecs_screenshot.jpg',
+      src: ecsScreenshot,
     },
   },
 ];
