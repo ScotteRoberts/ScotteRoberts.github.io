@@ -9,6 +9,7 @@ const projectData = [
     title: 'Aura',
     type: 'Full-Stack Web Application',
     description: 'Business finder that matches your personality.',
+    action: 'Find a Business',
     url: 'https://aura.community',
     img: {
       src: auraSceenshot,
@@ -18,6 +19,7 @@ const projectData = [
     title: 'Movie Viewer',
     type: 'Front-End Web Application',
     description: 'Take-home exam to display movie content from an API.',
+    action: 'Find a Movie',
     url: 'https://movie-viewer.netlify.com',
     img: {
       src: movieViewerScreenshot,
@@ -27,6 +29,7 @@ const projectData = [
     title: 'Connect Four',
     type: 'Front-End Web Application',
     description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
+    action: 'Play now',
     url: 'https://custom-connect-four.netlify.com/',
     img: {
       src: connectFourScreenshot,
@@ -36,6 +39,7 @@ const projectData = [
     title: 'Momentum Clone',
     type: 'Google Chrome Extension',
     description: 'Simple overlay over Google Homepage to offer a personalized experience.',
+    action: 'View Docs',
     url: 'https://github.com/ScotteRoberts/Momentum-Clone',
     img: {
       src: momentumCloneScreenshot,
@@ -45,6 +49,7 @@ const projectData = [
     title: 'Extra Curricular Schooling',
     type: 'Full-Stack Web Application',
     description: 'Article aggregator with reading gamefication.',
+    action: 'View Docs',
     url: 'https://github.com/extra-curricular-schooling/ecs-development',
     img: {
       src: ecsScreenshot,

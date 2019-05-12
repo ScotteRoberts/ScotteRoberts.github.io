@@ -40,13 +40,6 @@ header nav ul li {
 
 header nav ul li a {
   display: block;
-  transition: color 1000ms, background-color 500ms;
-}
-
-header nav ul li a:hover,
-.dropdown:hover .dropdown-button {
-  color: var(--white);
-  background-color: var(--grey);
 }
 
 .active {
@@ -77,11 +70,23 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* ============================ Media Queries ================================= */
+
+@media (hover: none) {
 }
 
-/* ============================ Media Queries ================================= */
+/* All hover effects */
+@media (hover: hover) {
+  header nav ul li a:hover,
+  .dropdown:hover .dropdown-button {
+    color: var(--white);
+    background-color: var(--grey);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
 
 @media only screen and (max-width: 44rem) {
   /* #logo {

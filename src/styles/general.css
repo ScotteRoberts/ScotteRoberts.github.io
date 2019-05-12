@@ -4,10 +4,12 @@
   font-family: 'Lato', sans-serif;
   font-display: auto;
   color: #333;
+
   --gold: #ffc60a;
   --grey: #888;
   --black: #000;
   --white: #eee;
+  --blue: dodgerblue;
 }
 
 @media only screen and (max-width: 44rem) {
@@ -17,7 +19,6 @@
 }
 
 html {
-  /* Ask Andrew if this is scroll-jacking */
   scroll-behavior: smooth;
   background-color: whitesmoke;
 }
@@ -59,11 +60,21 @@ a {
   color: var(--grey);
   font-size: 1rem;
   text-decoration: none;
-  transition: color 1000ms;
+  transition: color 350ms, background-color 350ms;
 }
 
-a:hover {
-  color: var(--black);
+@media (hover: hover) {
+  a:hover {
+    color: var(--white);
+    background-color: var(--grey);
+  }
+}
+
+@media (hover: none) {
+  a:active {
+    color: var(--white);
+    background-color: var(--grey);
+  }
 }
 
 pre {

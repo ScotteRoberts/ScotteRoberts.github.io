@@ -2,13 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Project = ({ projectData }) => {
-  const { title, type, description, url, img } = projectData;
+  const { title, type, description, action, url, img } = projectData;
   return (
-    <a href={url}>
-      <img src={img.src} alt={`${title} Screenshot`} />
+    <div>
+      <a href={url}>
+        <img src={img.src} alt={`${title} Screenshot`} />
+      </a>
       <h3>{`${title} | ${type}`}</h3>
       <h4>{`${description}`}</h4>
-    </a>
+      <a href={url}>{`${action}`} &#8811;</a>
+    </div>
   );
 };
 
@@ -17,6 +20,7 @@ Project.propTypes = {
     title: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    action: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     img: PropTypes.shape({
       src: PropTypes.string.isRequired,
