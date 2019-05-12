@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import resume from '../assets/docs/ScottRoberts_Resume_101118.pdf';
 import '../styles/NavBar.css';
 
 const NavBar = () => (
@@ -25,7 +26,7 @@ const NavBar = () => (
           <Link to="/blog/">Blog</Link>
         </li>
         <li>
-          <a href="docs/ScottRoberts_Resume_101118.pdf" target="_blank">
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </li>
