@@ -1,8 +1,8 @@
 header {
   position: fixed;
   display: flex;
-  width: calc(100% - 1rem);
-  padding: 0 0.5rem;
+  width: calc(100%);
+  /* padding: 0 0.5rem; */
   z-index: 999;
 
   background-color: white;
@@ -18,10 +18,6 @@ header nav {
   flex-flow: wrap;
 }
 
-header nav a {
-  padding: 0.5rem;
-}
-
 header nav ul {
   list-style: none;
   margin: 0;
@@ -34,67 +30,80 @@ header nav ul {
   flex-wrap: wrap;
 }
 
-header nav ul li {
-  padding: 0;
-}
-
-header nav ul li a {
+header nav a,
+.dropdown-button {
   display: block;
+  padding: 0.5rem;
+  background-color: white;
 }
 
-.active {
+.dropdown-button {
+  /* Reset button styles */
+  border: none;
+  cursor: pointer;
+  line-height: inherit;
+
+  /* Style for nav item */
+  color: var(--grey);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 350ms, background-color 350ms;
+}
+
+header nav a:focus,
+header nav a:focus-within {
   color: var(--white);
   background-color: var(--grey);
 }
 
-/* ========================= Drop down menu styling ============================== */
-
-li.dropdown {
-  display: inline-block;
-}
-
+/* Hide dropdown content normally */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 8rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+/* 
+At the current time, ':focus-within' is an experimental property that is gaining popularity 
+Credits: Check this out... https://css-tricks.com/solved-with-css-dropdown-menus/
+*/
 
-header nav ul li a:hover,
-.dropdown:hover .dropdown-button {
-  color: var(--white);
+.dropdown:focus .dropdown-button,
+.dropdown:focus-within .dropdown-button {
+  color: var(--off-white);
   background-color: var(--grey);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 
-/* ============================ Media Queries ================================= */
-
-@media (hover: none) {
-}
-
-/* All hover effects */
 @media (hover: hover) {
+  /* To keep the navitem and dropdown highlighted when hovered */
+  header nav a:hover,
+  .dropdown:hover .dropdown-button {
+    color: var(--off-white);
+    background-color: var(--grey);
+  }
+
+  /* Display submenu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
+
+/* ============================ Media Queries ================================= */
 
 @media only screen and (max-width: 44rem) {
   /* #logo {
     display: none;
   } */
   header nav a,
-  header nav ul li a {
+  header nav ul li a,
+  .dropdown-button {
     font-size: 0.8rem;
   }
 }

@@ -8,8 +8,9 @@
   --gold: #ffc60a;
   --grey: #888;
   --black: #000;
-  --white: #eee;
-  --blue: dodgerblue;
+  --white: #f9f9f9;
+  --off-white: #eee;
+  --sea-green: #20b2aa;
 }
 
 @media only screen and (max-width: 44rem) {
@@ -24,7 +25,7 @@ html {
 }
 
 section {
-  max-width: 40rem;
+  max-width: 50rem;
   margin: auto;
   padding: 3rem 2rem 0 2rem;
 
@@ -69,14 +70,14 @@ p a {
 
 @media (hover: hover) {
   a:hover {
-    color: var(--white);
+    color: var(--off-white);
     background-color: var(--grey);
   }
 }
 
 @media (hover: none) {
   a:active {
-    color: var(--white);
+    color: var(--off-white);
     background-color: var(--grey);
   }
 }
@@ -93,6 +94,11 @@ code {
 blockquote {
   padding: 0rem 1.5rem;
   border-left: 3px solid black;
+}
+
+.active {
+  color: var(--off-white);
+  background-color: var(--sea-green);
 }
 
 .tab {

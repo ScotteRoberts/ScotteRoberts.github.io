@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 const BlogLayout = ({ children }) => (
   <main>
     <NavBar />
-    <section>{children}</section>
+    <article>{children}</article>
   </main>
 );
 
