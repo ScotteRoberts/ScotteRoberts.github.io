@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import BlogLayout from '../layouts/BlogLayout';
 import Head from '../components/Head';
-import '../styles/blog.css';
+import '../styles/blog.scss';
 
 const Blog = ({ data }) => (
   <>
