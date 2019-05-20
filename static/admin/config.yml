@@ -6,9 +6,9 @@ media_folder: static/assets/img
 public_folder: /assets/img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'blogPost'
+    label: 'Blog Post'
+    folder: 'src/pages/blog-posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
