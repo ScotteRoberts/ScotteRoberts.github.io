@@ -8,13 +8,56 @@
 @import 'helpers/breakpoints';
 
 .mobile {
-  @include min-width-breakpoint('tablet') {
+  display: none;
+  @include max-width-breakpoint('mobile-large') {
+    display: inherit;
+  }
+}
+
+.not-mobile {
+  display: inherit;
+  @include max-width-breakpoint('mobile-large') {
     display: none;
   }
 }
 
-.desktop {
-  @include max-width-breakpoint('tablet') {
+.tablet {
+  display: none;
+  @include full-width-breakpoint('mobile-large', 'tablet') {
+    display: inherit;
+  }
+}
+
+.not-tablet {
+  display: inherit;
+  @include full-width-breakpoint('mobile-large', 'tablet') {
+    display: none;
+  }
+}
+
+.laptop {
+  display: none;
+  @include full-width-breakpoint('tablet', 'laptop-large') {
+    display: inherit;
+  }
+}
+
+.not-laptop {
+  display: inherit;
+  @include full-width-breakpoint('tablet', 'laptop-large') {
+    display: none;
+  }
+}
+
+.high-def {
+  display: none;
+  @include min-width-breakpoint('laptop-large') {
+    display: inherit;
+  }
+}
+.not-high-def {
+  display: inherit;
+  @include min-width-breakpoint('laptop-large') {
     display: none;
   }
 }

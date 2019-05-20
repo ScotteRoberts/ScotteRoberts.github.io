@@ -36,7 +36,7 @@ const DropdownSections = () => (
         Home
       </Link>
     </li>
-    <li className="mobile dropdown">
+    <li className="dropdown">
       <button aria-haspopup="true" className="dropdown-button">
         Sections &#9662;
       </button>
@@ -62,7 +62,7 @@ const DropdownSections = () => (
 );
 
 const ExpandedSections = () => (
-  <ul className="desktop">
+  <ul className="not-mobile">
     <li>
       <Link to="/" activeClassName="active" onClick={blur}>
         Home
