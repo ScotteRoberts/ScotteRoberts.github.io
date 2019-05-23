@@ -1,7 +1,8 @@
 ---
 title: 'Hello World'
 date: '2019-02-23'
-description: 'This is my first post and want to thank anyone who took the time to read what I have to write. I talk about' + [Talent Path](https://talentpath.com/) + 'and cool, technology-related information.'
+description: 'This is my first post and want to thank anyone who took the time to read what I have to write. I talk about Talent Path (https://talentpath.com) and cool, technology-related information.'
+thumbnail: 'https://cdn-images-1.medium.com/max/2600/1*0KFB17_NGTPB0XWyc4BSgQ.jpeg'
 ---
 
 ## Talent Path
