@@ -1,9 +1,9 @@
 ---
 title: 'Video Interviews'
 date: '2019-03-07'
+description: 'Employees had to do video interviews in the company to highlight your soft skills and previous experiences.'
+thumbnail: 'http://awesomelytechie.com/wp-content/uploads/2017/06/photo_video-job-interview.jpg'
 ---
-
-Employees had to do video interviews in the company to highlight your soft skills and previous experiences.
 
 ## Talent Path
 

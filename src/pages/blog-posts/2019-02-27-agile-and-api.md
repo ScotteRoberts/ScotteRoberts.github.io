@@ -1,9 +1,9 @@
 ---
 title: 'Agile and API'
 date: '2019-02-27'
+description: 'At Talent Path we are jumping into Node and Express development on servers. For technology, I have been interested in making Server APIs.'
+thumbnail: 'https://code.org/images/social-media/code-2018-creativity.png'
 ---
-
-At Talent Path we are jumping into Node and Express development on servers. For technology, I have been interested in making Server APIs.
 
 ## Talent Path
 

@@ -1,9 +1,9 @@
 ---
 title: 'Pokemon and Recommendations'
 date: '2019-03-11'
+description: 'We are currently creating a pokemon team builder application to practice our React skills. Also, I want to start writing out my recommendations to my coworkers because they deserve it.'
+thumbnail: 'https://cdn.lynda.com/course/156089/156089-636398703210009087-16x9.jpg'
 ---
-
-We are currently creating a pokemon team builder application to practice our React skills. Also, I want to start writing out my recommendations to my coworkers because they deserve it.
 
 ## Talent Path
 

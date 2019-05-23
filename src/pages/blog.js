@@ -11,12 +11,15 @@ const Blog = ({ data }) => (
     <BlogLayout>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article key={node.id} className="blog-post-item-container">
+          {/* TODO: Make this an image container */}
+          <img src={node.frontmatter.thumbnail} alt={`${node.frontmatter.title} preview`} />
           <Link to={node.fields.slug} className="blog-post-item-link">
-            <h3>
-              {node.frontmatter.title}
-              <span className="blog-post-item-date">{node.frontmatter.date}</span>
-            </h3>
-            <p>{node.excerpt}</p>
+            <h3>{node.frontmatter.title}</h3>
+            <p>{node.frontmatter.date}</p>
+            <p>{node.frontmatter.description}</p>
+            <p>
+              <ins>Click to view more</ins> <i className="fas fa-chevron-right" />
+            </p>
           </Link>
         </article>
       ))}
@@ -36,11 +39,12 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            description
+            thumbnail
           }
           fields {
             slug
           }
-          excerpt(pruneLength: 100)
         }
       }
     }
