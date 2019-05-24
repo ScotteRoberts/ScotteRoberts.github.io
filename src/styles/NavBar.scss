@@ -84,19 +84,19 @@ Credits: Check this out... https://css-tricks.com/solved-with-css-dropdown-menus
   display: block;
 }
 
-// @media (hover: hover) {
-//   /* To keep the navitem and dropdown highlighted when hovered */
-//   header nav a:hover,
-//   .dropdown:hover .dropdown-button {
-//     color: var(--off-white);
-//     background-color: var(--grey);
-//   }
+@media (hover: hover) {
+  /* To keep the navitem and dropdown highlighted when hovered */
+  header nav a:hover,
+  .dropdown:hover .dropdown-button {
+    color: var(--off-white);
+    background-color: var(--grey);
+  }
 
-//   /* Display submenu on hover */
-//   .dropdown:hover .dropdown-content {
-//     display: block;
-//   }
-// }
+  /* Display submenu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
 
 /* ============================ Media Queries ================================= */
 
