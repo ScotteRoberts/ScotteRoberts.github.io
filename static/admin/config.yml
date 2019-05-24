@@ -4,8 +4,8 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/assets/img
-public_folder: /assets/img
+media_folder: src/assets/img
+public_folder: src/assets/img
 
 collections:
   - name: 'blogPost'
