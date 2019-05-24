@@ -28,6 +28,10 @@ header nav ul {
   height: 100%;
 }
 
+.dropdown {
+  display: block;
+}
+
 header nav a,
 .dropdown-button {
   display: block;
@@ -41,16 +45,17 @@ header nav a:focus {
 }
 
 .dropdown-button {
-  /* Reset button styles */
-  border: none;
-  cursor: pointer;
-  line-height: inherit;
-
   /* Style for nav item */
+  position: relative;
   color: var(--grey);
   font-size: 1rem;
   text-decoration: none;
   transition: color 350ms, background-color 350ms;
+
+  /* Reset button styles */
+  border: none;
+  cursor: pointer;
+  line-height: inherit;
 }
 
 /* Hide dropdown content normally */
@@ -58,6 +63,7 @@ header nav a:focus {
   display: none;
   position: absolute;
   min-width: 8rem;
+  height: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
