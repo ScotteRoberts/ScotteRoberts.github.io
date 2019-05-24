@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import resume from '../assets/docs/ScottRoberts_Resume_051319.pdf';
+import resume from '../assets/docs/ScottRoberts_Resume.pdf';
 import '../styles/NavBar.scss';
 
 const blur = e => {
