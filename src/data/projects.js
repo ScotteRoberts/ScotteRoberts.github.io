@@ -1,5 +1,6 @@
 import auraSceenshot from '../assets/img/aura_screenshot.jpg';
 import movieViewerScreenshot from '../assets/img/movie_viewer_screenshot.jpg';
+import pokemonTeamBuilderScreenshot from '../assets/img/pokemon_team_builder_screenshot.jpg';
 import connectFourScreenshot from '../assets/img/connect_four_screenshot.jpg';
 import momentumCloneScreenshot from '../assets/img/momentum_clone_screenshot.jpg';
 import ecsScreenshot from '../assets/img/ecs_screenshot.jpg';
@@ -30,9 +31,9 @@ const projectData = {
     type: 'Front-End Web Application',
     description: 'Team builder application with real-time team changes',
     action: 'Make a Team',
-    url: 'https://movie-viewer.netlify.com',
+    url: 'https://poke-team-builder.herokuapp.com/',
     img: {
-      src: movieViewerScreenshot,
+      src: pokemonTeamBuilderScreenshot,
     },
   },
   connectFour: {
