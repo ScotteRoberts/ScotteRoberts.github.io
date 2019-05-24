@@ -3,7 +3,7 @@ header {
   display: flex;
   width: calc(100%);
   /* padding: 0 0.5rem; */
-  z-index: 999;
+  z-index: 10;
   background-color: white;
 }
 
@@ -65,7 +65,7 @@ header nav a:focus {
   min-width: 8rem;
   height: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 5;
 }
 
 /* 
@@ -84,18 +84,19 @@ Credits: Check this out... https://css-tricks.com/solved-with-css-dropdown-menus
   display: block;
 }
 
-@media (hover: hover) {
-  /* To keep the navitem and dropdown highlighted when hovered */
-  header nav a:hover,
-  .dropdown:hover .dropdown-button {
-    color: var(--off-white);
-    background-color: var(--grey);
-  }
+/* To keep the navitem and dropdown highlighted when hovered */
+header nav a:hover,
+.dropdown:hover .dropdown-button {
+  color: var(--off-white);
+  background-color: var(--grey);
+}
 
-  /* Display submenu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+/* Display submenu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (hover: hover) {
 }
 
 /* ============================ Media Queries ================================= */
