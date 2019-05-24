@@ -4,8 +4,8 @@ import connectFourScreenshot from '../assets/img/connect_four_screenshot.jpg';
 import momentumCloneScreenshot from '../assets/img/momentum_clone_screenshot.jpg';
 import ecsScreenshot from '../assets/img/ecs_screenshot.jpg';
 
-const projectData = [
-  {
+const projectData = {
+  aura: {
     title: 'Aura',
     type: 'Full-Stack Web Application',
     description: 'Business finder that matches your personality.',
@@ -15,7 +15,7 @@ const projectData = [
       src: auraSceenshot,
     },
   },
-  {
+  movieViewer: {
     title: 'Movie Viewer',
     type: 'Front-End Web Application',
     description: 'Take-home exam to display movie content from an API.',
@@ -25,7 +25,17 @@ const projectData = [
       src: movieViewerScreenshot,
     },
   },
-  {
+  pokemonTeamBuilder: {
+    title: 'Pokémon Team Builder',
+    type: 'Front-End Web Application',
+    description: 'Team builder application with real-time team changes',
+    action: 'Make a Team',
+    url: 'https://movie-viewer.netlify.com',
+    img: {
+      src: movieViewerScreenshot,
+    },
+  },
+  connectFour: {
     title: 'Connect Four',
     type: 'Front-End Web Application',
     description: 'HTML, CSS, and Javascript implementation of classic Connect Four.',
@@ -35,7 +45,7 @@ const projectData = [
       src: connectFourScreenshot,
     },
   },
-  {
+  momentumClone: {
     title: 'Momentum Clone',
     type: 'Google Chrome Extension',
     description: 'Simple overlay over Google Homepage to offer a personalized experience.',
@@ -45,7 +55,7 @@ const projectData = [
       src: momentumCloneScreenshot,
     },
   },
-  {
+  extraCurricularSchooling: {
     title: 'Extra Curricular Schooling',
     type: 'Full-Stack Web Application',
     description: 'Article aggregator with reading gamefication.',
@@ -55,6 +65,6 @@ const projectData = [
       src: ecsScreenshot,
     },
   },
-];
+};
 
 export default projectData;

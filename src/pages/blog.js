@@ -12,11 +12,14 @@ const Blog = ({ data }) => (
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article key={node.id} className="blog-post-item-container">
           {/* TODO: Make this an image container */}
-          <img src={node.frontmatter.thumbnail} alt={`${node.frontmatter.title} preview`} />
+          <div className="blog-thumbnail-container">
+            <img src={node.frontmatter.thumbnail} alt={`${node.frontmatter.title} preview`} />
+          </div>
+
           <Link to={node.fields.slug} className="blog-post-item-link">
             <h3>{node.frontmatter.title}</h3>
             <p>{node.frontmatter.date}</p>
-            <p>{node.frontmatter.description}</p>
+            <p className="not-mobile">{node.frontmatter.description}</p>
             <p>
               <ins>Click to view more</ins> <i className="fas fa-chevron-right" />
             </p>
