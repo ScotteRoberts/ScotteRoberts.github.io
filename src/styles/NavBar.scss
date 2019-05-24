@@ -4,30 +4,28 @@ header {
   width: calc(100%);
   /* padding: 0 0.5rem; */
   z-index: 999;
-
   background-color: white;
 }
 
 header nav {
   display: flex;
-  flex-flow: column;
-  width: 100%;
+  flex-flow: wrap;
   justify-content: space-between;
   align-items: center;
 
-  flex-flow: wrap;
+  width: 100%;
 }
 
 header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 header nav a,
@@ -35,6 +33,11 @@ header nav a,
   display: block;
   padding: 0.5rem;
   background-color: white;
+}
+
+header nav a:focus {
+  color: var(--white);
+  background-color: var(--grey);
 }
 
 .dropdown-button {
@@ -48,12 +51,6 @@ header nav a,
   font-size: 1rem;
   text-decoration: none;
   transition: color 350ms, background-color 350ms;
-}
-
-header nav a:focus,
-header nav a:focus-within {
-  color: var(--white);
-  background-color: var(--grey);
 }
 
 /* Hide dropdown content normally */
@@ -70,30 +67,30 @@ At the current time, ':focus-within' is an experimental property that is gaining
 Credits: Check this out... https://css-tricks.com/solved-with-css-dropdown-menus/
 */
 
-.dropdown:focus .dropdown-button,
-.dropdown:focus-within .dropdown-button {
+.dropdown:focus-within .dropdown-button,
+.dropdown-button:focus {
   color: var(--off-white);
   background-color: var(--grey);
 }
 
-.dropdown:focus .dropdown-content,
-.dropdown:focus-within .dropdown-content {
+.dropdown:focus-within .dropdown-content,
+.dropdown-button:focus + .dropdown-content {
   display: block;
 }
 
-@media (hover: hover) {
-  /* To keep the navitem and dropdown highlighted when hovered */
-  header nav a:hover,
-  .dropdown:hover .dropdown-button {
-    color: var(--off-white);
-    background-color: var(--grey);
-  }
+// @media (hover: hover) {
+//   /* To keep the navitem and dropdown highlighted when hovered */
+//   header nav a:hover,
+//   .dropdown:hover .dropdown-button {
+//     color: var(--off-white);
+//     background-color: var(--grey);
+//   }
 
-  /* Display submenu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
+//   /* Display submenu on hover */
+//   .dropdown:hover .dropdown-content {
+//     display: block;
+//   }
+// }
 
 /* ============================ Media Queries ================================= */
 
