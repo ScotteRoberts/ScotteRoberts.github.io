@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import BlogLayout from '../layouts/BlogLayout';
 
@@ -12,6 +13,12 @@ const BlogPost = ({ data }) => {
   );
 };
 
+BlogPost.propTypes = {
+  data: PropTypes.object.isRequired, // FIXME: Clean this later
+};
+
+export default BlogPost;
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -22,4 +29,3 @@ export const query = graphql`
     }
   }
 `;
-export default BlogPost;
