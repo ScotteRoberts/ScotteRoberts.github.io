@@ -5,7 +5,12 @@ const Project = ({ projectData }) => {
   const { title, type, description, action, url, img } = projectData;
   return (
     <div>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="img-link"
+      >
         <img src={img.src} alt={`${title} Screenshot`} />
       </a>
       <h3>{`${title} | ${type}`}</h3>

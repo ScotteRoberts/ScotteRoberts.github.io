@@ -56,17 +56,17 @@ img {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  a {
+    text-decoration: underline;
+  }
 }
 
 a {
+  padding: 0 0.2rem;
   color: var(--grey);
   font-size: 1rem;
   text-decoration: none;
-  transition: color 350ms, background-color 350ms;
-}
-
-p a {
-  text-decoration: underline;
+  transition: all 350ms;
 }
 
 @media (hover: hover) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import resume from '../assets/docs/ScottRoberts_Resume.pdf';
+import resume from '../assets/docs/ScottRoberts_FullStack_Resume_082419.pdf';
 import '../styles/NavBar.scss';
 
 const blur = e => {
@@ -20,7 +20,12 @@ const NavBar = () => (
           </Link>
         </li>
         <li>
-          <a href={resume} target="_blank" rel="noopener noreferrer" onClick={blur}>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={blur}
+          >
             Resume
           </a>
         </li>

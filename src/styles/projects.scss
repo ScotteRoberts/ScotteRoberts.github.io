@@ -6,3 +6,24 @@
 
   list-style: none;
 }
+
+a.img-link {
+  padding: 0;
+  text-decoration: none;
+  transition: all 350ms;
+
+  img {
+    transition: all 350ms;
+  }
+}
+
+// TODO: Fix later. Not working right now.
+@media (hover: hover) {
+  a.img-link:hover {
+    background-color: none;
+  }
+  a.img-link img:hover {
+    box-shadow: 0 0 15px 3px var(--grey);
+    background-color: var(--off-white);
+  }
+}
