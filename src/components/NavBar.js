@@ -15,11 +15,6 @@ const NavBar = () => (
       <DropdownSections />
       <ul>
         <li>
-          <Link to="/blog/" activeClassName="active" onClick={blur}>
-            Blog
-          </Link>
-        </li>
-        <li>
           <a
             href={resume}
             target="_blank"
