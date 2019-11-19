@@ -13,18 +13,6 @@ const NavBar = () => (
     <nav role="navigation">
       <ExpandedSections />
       <DropdownSections />
-      <ul>
-        <li>
-          <a
-            href={resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={blur}
-          >
-            Resume
-          </a>
-        </li>
-      </ul>
     </nav>
   </header>
 );
@@ -58,6 +46,11 @@ const DropdownSections = () => (
         </li>
       </ul>
     </li>
+    <li>
+      <a href={resume} target="_blank" rel="noopener noreferrer" onClick={blur}>
+        Resume
+      </a>
+    </li>
   </ul>
 );
 
@@ -82,6 +75,11 @@ const ExpandedSections = () => (
       <Link to="/#contact" onClick={blur}>
         Contact
       </Link>
+    </li>
+    <li>
+      <a href={resume} target="_blank" rel="noopener noreferrer" onClick={blur}>
+        Resume
+      </a>
     </li>
   </ul>
 );
