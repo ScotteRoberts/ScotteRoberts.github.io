@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import BlogLayout from '../layouts/BlogLayout';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import BlogLayout from "../layouts/BlogLayout";
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
@@ -20,7 +20,7 @@ BlogPost.propTypes = {
 export default BlogPost;
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

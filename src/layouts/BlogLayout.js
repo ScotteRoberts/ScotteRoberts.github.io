@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import React from "react";
+import PropTypes from "prop-types";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const BlogLayout = ({ children }) => (
   <main>
@@ -12,7 +12,10 @@ const BlogLayout = ({ children }) => (
 );
 
 BlogLayout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array.isRequired, PropTypes.object.isRequired]),
+  children: PropTypes.oneOfType([
+    PropTypes.array.isRequired,
+    PropTypes.object.isRequired,
+  ]),
 };
 
 export default BlogLayout;

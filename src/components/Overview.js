@@ -1,10 +1,10 @@
-import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Work from './Work';
-import Personal from './Personal';
-import Health from './Health';
-import '../styles/overview.scss';
-import '../styles/tabs.scss';
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Work from "./Work";
+import Personal from "./Personal";
+import Health from "./Health";
+import "../styles/overview.scss";
+import "../styles/tabs.scss";
 
 const Overview = () => (
   <article id="overview">

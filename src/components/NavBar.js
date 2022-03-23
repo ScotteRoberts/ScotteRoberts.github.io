@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import resume from '../assets/docs/ScottRoberts_FullStack_Resume_082419.pdf';
-import '../styles/NavBar.scss';
+import React from "react";
+import { Link } from "gatsby";
+import resume from "../assets/docs/ScottRoberts_FullStack_Resume_082419.pdf";
+import "../styles/NavBar.scss";
 
-const blur = e => {
+const blur = (e) => {
   const { currentTarget } = e;
   currentTarget.blur();
 };

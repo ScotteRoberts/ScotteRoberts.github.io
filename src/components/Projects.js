@@ -1,7 +1,7 @@
-import React from 'react';
-import Project from './Project';
-import projectObj from '../data/projects';
-import '../styles/projects.scss';
+import React from "react";
+import Project from "./Project";
+import projectObj from "../data/projects";
+import "../styles/projects.scss";
 
 const Projects = () => {
   const projects = Object.values(projectObj);

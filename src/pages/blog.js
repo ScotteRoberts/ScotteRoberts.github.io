@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import BlogLayout from '../layouts/BlogLayout';
-import Head from '../components/Head';
-import '../styles/blog.scss';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import BlogLayout from "../layouts/BlogLayout";
+import Head from "../components/Head";
+import "../styles/blog.scss";
 
 const Blog = ({ data }) => (
   <>
@@ -13,7 +13,10 @@ const Blog = ({ data }) => (
         <article key={node.id} className="blog-post-item-container">
           {/* TODO: Make this an image container */}
           <div className="blog-thumbnail-container">
-            <img src={node.frontmatter.thumbnail} alt={`${node.frontmatter.title} preview`} />
+            <img
+              src={node.frontmatter.thumbnail}
+              alt={`${node.frontmatter.title} preview`}
+            />
           </div>
 
           <Link to={node.fields.slug} className="blog-post-item-link">
@@ -21,7 +24,8 @@ const Blog = ({ data }) => (
             <p>{node.frontmatter.date}</p>
             <p className="not-mobile">{node.frontmatter.description}</p>
             <p>
-              <ins>Click to view more</ins> <i className="fas fa-chevron-right" />
+              <ins>Click to view more</ins>{" "}
+              <i className="fas fa-chevron-right" />
             </p>
           </Link>
         </article>

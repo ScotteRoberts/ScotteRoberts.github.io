@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Project = ({ projectData }) => {
   const { title, type, description, action, url, img } = projectData;
