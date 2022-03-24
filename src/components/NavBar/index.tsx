@@ -56,9 +56,6 @@ function NavBar() {
         <DropdownSections />
         <ul>
           <li>
-            <NavLink to="/blog/">Blog</NavLink>
-          </li>
-          <li>
             <a href={resume} target="_blank" rel="noopener noreferrer">
               Resume
             </a>

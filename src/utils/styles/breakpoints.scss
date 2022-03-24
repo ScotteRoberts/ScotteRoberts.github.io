@@ -88,7 +88,7 @@ $breakpoints: (
   // If the key exists in the map
   @if (
     map-has-key($breakpoints, $breakpointStart) and
-      calc(map-has-key($breakpoints, $breakpointEnd) - 1px)
+      map-has-key($breakpoints, $breakpointEnd)
   ) {
     // Prints a media query based on the value
     @media screen and (min-width: map-get($breakpoints, $breakpointStart)) and (max-width: map-get($breakpoints, $breakpointEnd )) {

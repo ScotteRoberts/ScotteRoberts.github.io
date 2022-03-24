@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+  font-size: 20px;
+  line-height: 1.8rem;
+  font-family: 'Lato', sans-serif;
+  font-display: auto;
+  color: #333;
+
+  --gold: #ffc60a;
+  --grey: #888;
+  --black: #000;
+  --white: #f9f9f9;
+  --off-white: #eee;
+  --sea-green: #20b2aa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 44rem) {
+  :root {
+    font-size: 18px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html {
+  scroll-behavior: smooth;
+  background-color: whitesmoke;
+}
+
+section {
+  max-width: 50rem;
+  margin: auto;
+  padding: 3rem 2rem 0 2rem;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+article {
+  max-width: 30rem;
+  margin: auto;
+  padding: 3rem 2rem 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+article h3 {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  a {
+    text-decoration: underline;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+a {
+  padding: 0 0.2rem;
+  color: var(--grey);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 350ms;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--off-white);
+    background-color: var(--grey);
   }
+}
+
+@media (hover: none) {
+  a:active {
+    color: var(--off-white);
+    background-color: var(--grey);
+  }
+}
+
+h1,
+h2 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: #222;
+}
+
+h3 {
+  margin: 1rem 0;
+  line-height: 1.25;
+
+  color: var(--gold);
+}
+
+h4 {
+  margin: 1rem 0;
+}
+
+
+pre {
+  border-radius: 8px;
+  background-color: #333;
+  padding: 0.5rem 1.5rem;
+}
+code {
+  color: azure;
+}
+
+blockquote {
+  padding: 0rem 1.5rem;
+  border-left: 3px solid black;
+}
+
+.active {
+  color: var(--off-white);
+  background-color: var(--sea-green);
+}
+
+.tab {
+  padding-left: 1.5rem;
 }
