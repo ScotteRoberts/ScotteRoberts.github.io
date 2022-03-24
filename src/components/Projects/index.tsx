@@ -1,7 +1,7 @@
 import React from 'react'
+import projectObj from '../../data/projects'
 import Project from '../Project'
-import projectObj from '../data/projects'
-import '../styles/projects.scss'
+import './styles.scss'
 
 function Projects() {
   const projects = Object.values(projectObj)
@@ -9,8 +9,8 @@ function Projects() {
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        {projects.map((project, i) => (
-          <li key={i}>
+        {projects.map((project) => (
+          <li key={project.url}>
             <Project projectData={project} />
           </li>
         ))}

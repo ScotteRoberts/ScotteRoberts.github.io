@@ -10,8 +10,8 @@ function Health() {
       <span className="summary">
         <em>[tl;dr]</em>
         <p className="tab">
-          A good night's rest, proper hydration, a balanced diet, and stretching
-          will lead to a happier life.
+          A good night&apos;s rest, proper hydration, a balanced diet, and
+          stretching will lead to a happier life.
         </p>
       </span>
       <p>

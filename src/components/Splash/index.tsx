@@ -1,13 +1,14 @@
 import React from 'react'
-import '../styles/splash.scss'
+import './styles.scss'
 
 function Splash() {
   return (
     <section id="splash">
       <h1>Scott Roberts</h1>
-      <p>"Gee, Brain, what do you want to do tonight?"</p>
+      <p>&quot;Gee, Brain, what do you want to do tonight?&quot;</p>
       <p>
-        "The same thing we do every night, Pinky - try to take over the world!"
+        &quot;The same thing we do every night, Pinky - try to take over the
+        world!&quot;
       </p>
     </section>
   )

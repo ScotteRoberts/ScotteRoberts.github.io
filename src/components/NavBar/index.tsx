@@ -1,40 +1,27 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import resume from '../assets/docs/ScottRoberts_FullStack_Resume_082419.pdf'
-import '../styles/NavBar.scss'
-
-const blur = (e) => {
-  const { currentTarget } = e
-  currentTarget.blur()
-}
+import { NavLink } from 'react-router-dom'
+import resume from '../../assets/docs/ScottRoberts_Resume.pdf'
+import './styles.scss'
 
 function DropdownSections() {
   return (
     <ul className="mobile">
       <li>
-        <Link to="/" activeClassName="active" onClick={blur}>
-          Home
-        </Link>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li className="dropdown">
-        <button aria-haspopup="true" className="dropdown-button">
+        <button aria-haspopup="menu" type="button" className="dropdown-button">
           Sections &#9662;
         </button>
         <ul aria-label="submenu" className="dropdown-content">
           <li>
-            <Link to="/#overview" onClick={blur}>
-              About
-            </Link>
+            <NavLink to="/#overview">About</NavLink>
           </li>
           <li>
-            <Link to="/#projects" onClick={blur}>
-              Projects
-            </Link>
+            <NavLink to="/#projects">Projects</NavLink>
           </li>
           <li>
-            <Link to="/#contact" onClick={blur}>
-              Contact
-            </Link>
+            <NavLink to="/#contact">Contact</NavLink>
           </li>
         </ul>
       </li>
@@ -46,24 +33,16 @@ function ExpandedSections() {
   return (
     <ul className="not-mobile">
       <li>
-        <Link to="/" activeClassName="active" onClick={blur}>
-          Home
-        </Link>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <Link to="/#overview" onClick={blur}>
-          About
-        </Link>
+        <NavLink to="/#overview">About</NavLink>
       </li>
       <li>
-        <Link to="/#projects" onClick={blur}>
-          Projects
-        </Link>
+        <NavLink to="/#projects">Projects</NavLink>
       </li>
       <li>
-        <Link to="/#contact" onClick={blur}>
-          Contact
-        </Link>
+        <NavLink to="/#contact">Contact</NavLink>
       </li>
     </ul>
   )
@@ -77,17 +56,10 @@ function NavBar() {
         <DropdownSections />
         <ul>
           <li>
-            <Link to="/blog/" activeClassName="active" onClick={blur}>
-              Blog
-            </Link>
+            <NavLink to="/blog/">Blog</NavLink>
           </li>
           <li>
-            <a
-              href={resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={blur}
-            >
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </li>

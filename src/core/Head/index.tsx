@@ -1,11 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-function Head({ title }) {
+function Head({ title }: { title: string }) {
   return (
     <Helmet>
-      <html lang="en" amp />
-      <meta charset="utf-8" />
+      <html lang="en" />
+      <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link

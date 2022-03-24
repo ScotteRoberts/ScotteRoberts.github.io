@@ -1,6 +1,6 @@
 import React from 'react'
-import scottRobertsIcon from '../assets/img/scott_roberts_icon_wedding.png'
-import '../styles/contacts.scss'
+import scottRobertsIcon from '../../assets/img/scott_roberts_icon_wedding.png'
+import './styles.scss'
 
 function Contact() {
   return (

@@ -26,7 +26,7 @@ function Personal() {
       </p>
       <p>
         My personal hobby is tapping (drums, bongos, cajons, cowbells) and if I
-        can get my hands on it, it's going to make some noise.
+        can get my hands on it, it&apos;s going to make some noise.
       </p>
     </>
   )

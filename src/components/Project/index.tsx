@@ -1,6 +1,7 @@
 import React from 'react'
+import { IProjectProps } from './types'
 
-function Project({ projectData }) {
+function Project({ projectData }: IProjectProps) {
   const { title, type, description, action, url, img } = projectData
   return (
     <div>
@@ -20,18 +21,5 @@ function Project({ projectData }) {
     </div>
   )
 }
-
-// Project.propTypes = {
-//   projectData: PropTypes.shape({
-//     title: PropTypes.string.isRequired,
-//     type: PropTypes.string.isRequired,
-//     description: PropTypes.string.isRequired,
-//     action: PropTypes.string.isRequired,
-//     url: PropTypes.string.isRequired,
-//     img: PropTypes.shape({
-//       src: PropTypes.string.isRequired
-//     })
-//   })
-// }
 
 export default Project
