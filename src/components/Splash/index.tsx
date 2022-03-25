@@ -3,7 +3,7 @@ import './styles.scss'
 
 function Splash() {
   return (
-    <section id="splash">
+    <section className="splash">
       <h1>Scott Roberts</h1>
       <p>&quot;Gee, Brain, what do you want to do tonight?&quot;</p>
       <p>

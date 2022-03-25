@@ -15,7 +15,7 @@ function Head({ title }: { title: string }) {
       />
       <meta
         name="Description"
-        content="Creator: Scott Roberts, Role: Full-Stack Engineer Consultant, Company: Talent Path, Blog: Technical Ramblings"
+        content="Creator: Scott Roberts, Role: Full-Stack Engineer Consultant, Company: WarnerMedia"
       />
       <title>{title}</title>
     </Helmet>

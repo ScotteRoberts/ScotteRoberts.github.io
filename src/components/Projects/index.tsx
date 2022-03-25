@@ -6,7 +6,7 @@ import './styles.scss'
 function Projects() {
   const projects = Object.values(projectObj)
   return (
-    <section id="projects">
+    <section className="projects">
       <h2>Projects</h2>
       <ul>
         {projects.map((project) => (

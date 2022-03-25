@@ -1,12 +1,22 @@
+import happyHowlHomepageScreenshot from '../assets/img/happy_howl_homepage_screenshot.png'
 import auraScreenshot from '../assets/img/aura_screenshot.jpg'
 import movieViewerScreenshot from '../assets/img/movie_viewer_screenshot.jpg'
 import pokemonTeamBuilderScreenshot from '../assets/img/pokemon_team_builder_screenshot.jpg'
 import simonSaysScreenshot from '../assets/img/simon-says_screenshot.png'
 import connectFourScreenshot from '../assets/img/connect_four_screenshot.jpg'
 import momentumCloneScreenshot from '../assets/img/momentum_clone_screenshot.jpg'
-import ecsScreenshot from '../assets/img/ecs_screenshot.jpg'
 
 const projectData = {
+  happyHowl: {
+    title: 'Happy Howl',
+    type: 'Shopify Store',
+    description: 'Human-grade dog food for picky eaters',
+    action: 'Shop Now',
+    url: 'https://thehappyhowl.com',
+    img: {
+      src: happyHowlHomepageScreenshot
+    }
+  },
   aura: {
     title: 'Aura',
     type: 'Full-Stack Web Application',
@@ -68,16 +78,6 @@ const projectData = {
     url: 'https://github.com/ScotteRoberts/Momentum-Clone',
     img: {
       src: momentumCloneScreenshot
-    }
-  },
-  extraCurricularSchooling: {
-    title: 'Extra Curricular Schooling',
-    type: 'Full-Stack Web Application',
-    description: 'Article aggregator with reading gamefication.',
-    action: 'View Docs',
-    url: 'https://github.com/extra-curricular-schooling/ecs-development',
-    img: {
-      src: ecsScreenshot
     }
   }
 }

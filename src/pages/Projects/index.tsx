@@ -4,7 +4,7 @@ import Page from '../../components/Page'
 
 function ProjectsPage() {
   return (
-    <Page title="Home | Scott Roberts">
+    <Page title="Projects | Scott Roberts">
       <Projects />
     </Page>
   )
