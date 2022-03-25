@@ -3,31 +3,31 @@ import { NavLink } from 'react-router-dom'
 import resume from '../../assets/docs/ScottRoberts_Resume.pdf'
 import './styles.scss'
 
-function DropdownSections() {
-  return (
-    <ul className="mobile">
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li className="dropdown">
-        <button aria-haspopup="menu" type="button" className="dropdown-button">
-          Sections &#9662;
-        </button>
-        <ul aria-label="submenu" className="dropdown-content">
-          <li>
-            <NavLink to="/#overview">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/#projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/#contact">Contact</NavLink>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  )
-}
+// function DropdownSections() {
+//   return (
+//     <ul className="mobile">
+//       <li>
+//         <NavLink to="/">Home</NavLink>
+//       </li>
+//       <li className="dropdown">
+//         <button aria-haspopup="menu" type="button" className="dropdown-button">
+//           Sections &#9662;
+//         </button>
+//         <ul aria-label="submenu" className="dropdown-content">
+//           <li>
+//             <NavLink to="/#overview">About</NavLink>
+//           </li>
+//           <li>
+//             <NavLink to="/#projects">Projects</NavLink>
+//           </li>
+//           <li>
+//             <NavLink to="/#contact">Contact</NavLink>
+//           </li>
+//         </ul>
+//       </li>
+//     </ul>
+//   )
+// }
 
 function ExpandedSections() {
   return (
@@ -36,13 +36,10 @@ function ExpandedSections() {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/#overview">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
       </li>
       <li>
-        <NavLink to="/#projects">Projects</NavLink>
-      </li>
-      <li>
-        <NavLink to="/#contact">Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </ul>
   )
@@ -53,7 +50,7 @@ function NavBar() {
     <header>
       <nav role="navigation">
         <ExpandedSections />
-        <DropdownSections />
+        {/* <DropdownSections /> */}
         <ul>
           <li>
             <a href={resume} target="_blank" rel="noopener noreferrer">

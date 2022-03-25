@@ -3,8 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import Work from '../Work'
 import Personal from '../Personal'
 import Health from '../Health'
-import './styles.scss'
-// import '../styles/tabs.scss'
+import './styles/index.scss'
 
 function Overview() {
   return (

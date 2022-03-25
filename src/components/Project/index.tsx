@@ -1,7 +1,7 @@
 import React from 'react'
-import { IProjectProps } from './types'
+import { ProjectProps } from './types'
 
-function Project({ projectData }: IProjectProps) {
+function Project({ projectData }: ProjectProps) {
   const { title, type, description, action, url, img } = projectData
   return (
     <div>

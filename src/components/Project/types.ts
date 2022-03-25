@@ -1,4 +1,4 @@
-export interface IProject {
+export interface Project {
   title: string
   type: string
   description: string
@@ -9,6 +9,6 @@ export interface IProject {
   }
 }
 
-export interface IProjectProps {
-  projectData: IProject
+export interface ProjectProps {
+  projectData: Project
 }

@@ -27,6 +27,12 @@ html {
   background-color: whitesmoke;
 }
 
+#root {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 section {
   max-width: 50rem;
   margin: auto;

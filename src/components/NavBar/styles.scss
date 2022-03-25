@@ -1,5 +1,6 @@
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   display: flex;
   width: calc(100%);
   /* padding: 0 0.5rem; */
