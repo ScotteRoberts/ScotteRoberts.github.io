@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import resume from '../../assets/docs/ScottRoberts_Resume.pdf'
+import resume from '../../assets/docs/ScottRoberts_Resume_032122.pdf'
 import './styles.scss'
 
 // function DropdownSections() {

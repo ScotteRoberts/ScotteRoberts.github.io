@@ -1,12 +1,24 @@
+import nestScreenshot from '../assets/img/nest_screenshot.png'
 import happyHowlHomepageScreenshot from '../assets/img/happy_howl_homepage_screenshot.png'
 import auraScreenshot from '../assets/img/aura_screenshot.jpg'
 import movieViewerScreenshot from '../assets/img/movie_viewer_screenshot.jpg'
 import pokemonTeamBuilderScreenshot from '../assets/img/pokemon_team_builder_screenshot.jpg'
-import simonSaysScreenshot from '../assets/img/simon-says_screenshot.png'
 import connectFourScreenshot from '../assets/img/connect_four_screenshot.jpg'
 import momentumCloneScreenshot from '../assets/img/momentum_clone_screenshot.jpg'
+import vickysFlowerShopScreenshot from '../assets/img/vickys_flower_shop_screenshot.png'
 
 const projectData = {
+  nest: {
+    title: 'Nest',
+    type: 'Digital Asset Management (DAM) Platform',
+    description:
+      'Internal tool for storage and distribution of intellectual property',
+    action: 'Manage Assets',
+    url: 'https://nest.wb.com/',
+    img: {
+      src: nestScreenshot
+    }
+  },
   happyHowl: {
     title: 'Happy Howl',
     type: 'Shopify Store',
@@ -21,8 +33,8 @@ const projectData = {
     title: 'Aura',
     type: 'Full-Stack Web Application',
     description: 'Business finder that matches your personality.',
-    action: 'Find a Business',
-    url: 'https://aura.community',
+    action: 'View Docs',
+    url: 'https://github.com/project-aura/client',
     img: {
       src: auraScreenshot
     }
@@ -48,14 +60,14 @@ const projectData = {
     }
   },
   simonSays: {
-    title: 'Simon Says',
+    title: "Vicky's Flower Shop",
     type: 'Front-End Web Application',
     description:
-      'HTML, CSS, and Javascript implementation of classic Simon Says.',
-    action: 'Play now',
-    url: 'https://tp-simon-says.netlify.com/',
+      'Coding challenge simulating an e-commerce product selection + cart',
+    action: 'View Docs',
+    url: 'https://github.com/ScotteRoberts/vickys-flowers',
     img: {
-      src: simonSaysScreenshot
+      src: vickysFlowerShopScreenshot
     }
   },
   connectFour: {
