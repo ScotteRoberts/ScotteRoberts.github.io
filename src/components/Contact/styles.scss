@@ -1,40 +1,24 @@
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
-#contact img {
-  width: 8rem;
-  align-self: center;
+.contact {
+  .avatar {
+    align-self: center;
+    width: 200px;
+    height: auto;
+  }
+  .title {
+    text-align: center;
+  }
+  .icon {
+    display: flex;
+    align-content: center;
+    color: var(--black);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
 }
 
-#contact h2 {
-  margin: 0;
-}
-
-#contact div {
-  display: flex;
-  margin: 2.2rem 0 1.8rem 0;
-
+.icon-item {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#contact div div {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.icon {
-  display: flex;
-  align-content: center;
-  padding: 0.5rem;
-  border-radius: 5%;
-
-  color: var(--black);
-  font-size: 2.5rem;
-  text-decoration: none;
 }

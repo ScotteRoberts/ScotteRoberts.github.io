@@ -1,10 +1,11 @@
 import React from 'react'
 import { ProjectProps } from './types'
+import './styles.scss'
 
 function Project({ projectData }: ProjectProps) {
   const { title, type, description, action, url, img } = projectData
   return (
-    <div>
+    <div className="project">
       <a
         href={url}
         target="_blank"

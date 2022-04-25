@@ -1,54 +1,64 @@
 import React from 'react'
-import scottRobertsIcon from '../../assets/img/scott_roberts_icon_wedding.png'
+import scottRobertsIcon from '../../assets/icons/scott_roberts_icon_wedding.png'
+import phoneIcon from '../../assets/icons/ic-phone-call.svg'
+import emailIcon from '../../assets/icons/ic-email.svg'
+import linkedinIcon from '../../assets/icons/ic-linkedin.png'
+import githubIcon from '../../assets/icons/ic-github.png'
 import './styles.scss'
 
 function Contact() {
   return (
-    <section id="contact">
-      <img src={scottRobertsIcon} alt="A handsome man" />
-      <div>
-        <h2>Contact Information</h2>
-        <div>
-          <a
-            className="icon"
-            href="tel:1-714-833-7051"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Scott Roberts Phone Number"
-          >
-            <i className="fas fa-mobile-alt" />
-          </a>
-          <a
-            className="icon"
-            href="mailto:sroberts@talentpath.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Scott Roberts Email"
-          >
-            <i className="far fa-envelope" />
-          </a>
-          <a
-            className="icon"
-            href="https://www.linkedin.com/in/scott-e-roberts"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Scott Roberts LinkedIn"
-          >
-            <i className="fab fa-linkedin" />
-          </a>
-          <a
-            className="icon"
-            href="https://github.com/ScotteRoberts"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Scott Roberts GitHub"
-          >
-            <i className="fab fa-github" />
-          </a>
-        </div>
-      </div>
+    <section className="contact">
+      <img className="avatar" src={scottRobertsIcon} alt="A handsome man" />
+
+      <h2 className="title">Contact Information</h2>
+      <nav className="icon-list">
+        <a
+          className="icon-item"
+          href="tel:1-714-833-7051"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Scott Roberts Phone Number"
+        >
+          <img width={64} height={64} src={phoneIcon} alt="Phone Icon" />
+          <span>714) 833-7051</span>
+        </a>
+
+        <a
+          className="icon-item"
+          href="mailto:s.e.roberts0@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Scott Roberts Email"
+        >
+          <img width={64} height={64} src={emailIcon} alt="Email Icon" />
+          s.e.roberts0@gmail.com
+        </a>
+        <a
+          className="icon-item"
+          href="https://www.linkedin.com/in/scott-e-roberts"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Scott Roberts LinkedIn"
+        >
+          <img width={64} height={64} src={linkedinIcon} alt="LinkedIn Icon" />
+          View Profile
+        </a>
+
+        <a
+          className="icon-item"
+          href="https://github.com/ScotteRoberts"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Scott Roberts GitHub"
+        >
+          <img width={64} height={64} src={githubIcon} alt="Github Icon" />
+          View Profile
+        </a>
+      </nav>
+
       <span>
-        Icon made by <a href="https://www.freepik.com">Freepik</a> from{' '}
+        Icons made by <a href="https://www.freepik.com">Freepik</a> from{' '}
         <a href="https://www.flaticon.com">Flaticon</a>
       </span>
     </section>

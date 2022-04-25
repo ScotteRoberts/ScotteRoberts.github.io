@@ -40,11 +40,6 @@ header nav a,
   background-color: white;
 }
 
-header nav a:focus {
-  color: var(--white);
-  background-color: var(--grey);
-}
-
 .dropdown-button {
   /* Style for nav item */
   position: relative;
@@ -74,22 +69,9 @@ At the current time, ':focus-within' is an experimental property that is gaining
 Credits: Check this out... https://css-tricks.com/solved-with-css-dropdown-menus/
 */
 
-.dropdown:focus-within .dropdown-button,
-.dropdown-button:focus {
-  color: var(--off-white);
-  background-color: var(--grey);
-}
-
 .dropdown:focus-within .dropdown-content,
 .dropdown-button:focus + .dropdown-content {
   display: block;
-}
-
-/* To keep the navitem and dropdown highlighted when hovered */
-header nav a:hover,
-.dropdown:hover .dropdown-button {
-  color: var(--off-white);
-  background-color: var(--grey);
 }
 
 /* Display submenu on hover */
