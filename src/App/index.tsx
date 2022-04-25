@@ -5,6 +5,7 @@ import NotFound from '../pages/404'
 import './styles.scss'
 import ContactPage from '../pages/Contact'
 import ProjectsPage from '../pages/Projects'
+import ResumePage from '../pages/Resume'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/resume" element={<ResumePage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

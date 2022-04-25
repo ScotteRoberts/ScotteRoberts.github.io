@@ -56,11 +56,6 @@ function Contact() {
           View Profile
         </a>
       </nav>
-
-      <span>
-        Icons made by <a href="https://www.freepik.com">Freepik</a> from{' '}
-        <a href="https://www.flaticon.com">Flaticon</a>
-      </span>
     </section>
   )
 }
