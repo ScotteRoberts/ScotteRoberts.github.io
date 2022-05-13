@@ -16,13 +16,19 @@ function Overview() {
           <Tab>Health</Tab>
         </TabList>
         <TabPanel>
-          <Work />
+          <article className="panel-article">
+            <Work />
+          </article>
         </TabPanel>
         <TabPanel>
-          <Personal />
+          <article className="panel-article">
+            <Personal />
+          </article>
         </TabPanel>
         <TabPanel>
-          <Health />
+          <article className="panel-article">
+            <Health />
+          </article>
         </TabPanel>
       </Tabs>
 

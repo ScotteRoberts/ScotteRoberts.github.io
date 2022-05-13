@@ -3,10 +3,6 @@ import React from 'react'
 function Work() {
   return (
     <>
-      <h3>
-        <i className="fas fa-code-branch" />
-        <span className="tab">Work</span>
-      </h3>
       <span className="summary">
         <em>[tl;dr]</em>
         <p className="tab">

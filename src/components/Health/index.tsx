@@ -3,10 +3,6 @@ import React from 'react'
 function Health() {
   return (
     <>
-      <h3>
-        <i className="fas fa-heartbeat" />
-        <span className="tab">Health</span>
-      </h3>
       <span className="summary">
         <em>[tl;dr]</em>
         <p className="tab">
@@ -35,7 +31,7 @@ function Health() {
       </ul>
       <p>
         I take personal pride in living a healthy, active lifestyle and practice
-        healthy habbits during work and personal hours.
+        healthy habits during work and personal hours.
       </p>
     </>
   )

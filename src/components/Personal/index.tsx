@@ -3,10 +3,6 @@ import React from 'react'
 function Personal() {
   return (
     <>
-      <h3>
-        <i className="far fa-smile-beam" />
-        <span className="tab">Personal</span>
-      </h3>
       <span className="summary">
         <em>[tl;dr]</em>
         <p className="tab">
