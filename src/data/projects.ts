@@ -63,9 +63,9 @@ const projectData = {
     title: "Vicky's Flower Shop",
     type: 'Front-End Web Application',
     description:
-      'Coding challenge simulating an e-commerce product selection + cart',
-    action: 'View Docs',
-    url: 'https://github.com/ScotteRoberts/vickys-flowers',
+      '3 Day Coding challenge simulating an e-commerce product selection + cart',
+    action: 'View Challenge Result',
+    url: 'https://sr-vickys-flowers.netlify.app/',
     img: {
       src: vickysFlowerShopScreenshot
     }
